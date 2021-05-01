@@ -1,5 +1,5 @@
-﻿echo "킬링플로어2 데디케이트 서버 구축기  by. ㅇㅇ(1.239)"
-echo "version : 0.2.1"
+echo "킬링플로어2 데디케이트 서버 구축기  by. ㅇㅇ(1.239)"
+echo "version : 0.3"
 $install = Read-Host "킬링플로어2 데디케이트 서버를 설치할 폴더를 지정해주세요"
 $steamcmd = $install + "\cmd"
 mkdir $steamcmd
@@ -88,9 +88,54 @@ $server_webadminpassword = Read-Host "웹어드민에 사용할 암호 입력 "
 echo ""
 $server_difficulty = Read-Host "서버 난이도 설정 (보통:0, 어려움:1, 자살행위:2, 생지옥:3) "
 echo ""
+$server_gamemode = Read-Host "게임모드 설정 (VS(PvP):1, 서바이벌(Survival):2, 무한(Endless):3, 주간(Weekly):4) "
+echo ""
+if (0 -eq $server_gamemode)
+{
+    echo "게임모드가 0입니다. 서바이벌 모드로 설정합니다"
+    $server_gamemode = "?Game=KFGameContent.KFGameInfo_Survival"
+}
+if (1 -eq $server_gamemode)
+{
+    $server_gamemode = "?Game=KFGameContent.KFGameInfo_VersusSurvival"
+}
+if (2 -eq $server_gamemode)
+{
+    $server_gamemode = "?Game=KFGameContent.KFGameInfo_Survival"
+}
+if (3 -eq $server_gamemode)
+{
+    $server_gamemode = "?Game=KFGameContent.KFGameInfo_Endless"
+}
+if (4 -eq $server_gamemode)
+{
+    $server_gamemode = "?Game=KFGameContent.KFGameInfo_WeeklySurvival"
+}
+$server_length = Read-Host "서버 웨이브 길이 (짧음(4웨이브):0, 중간(7웨이브):1, 김(10웨이브):2) "
+$server_length = "GameLength=" + $server_length
+$server_length_line = Select-String "GameLength=" $Filepath3
+(Get-Content $Filepath3).replace($server_length_line.Line,$server_length) | Set-Content $Filepath3
+echo ""
+$server_spector = Read-Host "관전자 숫자 설정 (기본값 : 2) "
+if (0 -eq $server_spector)
+{
+    echo "관전자 숫자가 0입니다. 기본값인 2로 지정합니다"
+    $server_spector = 2
+}
+$server_spector = "MaxSpectators=" + $server_spector
+$server_spector_line = Select-String "MaxSpectators=" $Filepath3
+(Get-Content $Filepath3).replace($server_spector_line.Line,$server_spector) | Set-Content $Filepath3
+echo ""
+echo "비밀번호가 있는 서버를 만드시려면 입력해주시기 바랍니다"
+echo "공개된 방을 만드시려면 입력하지 않고 엔터를 눌러 생략합니다"
+$server_gamepassword = Read-Host "비밀번호 "
+$server_gamepassword = "GamePassword=" + $server_gamepassword
+$server_spector_line = Select-String "GamePassword=" $Filepath3
+(Get-Content $Filepath3).replace($server_spector_line.Line,$server_gamepassword) | Set-Content $Filepath3
+echo ""
 echo "서버 실행은 서버 설치 폴더에 가면 서버실행기.bat이 있습니다 해당 파일을 더블클릭하여 실행합니다."
 Read-Host -Prompt "설정이 완료되었습니다. 엔터를 눌러 설치를 종료합니다"
 
 $server_start_bat = $install + "\서버실행기.bat"
-$run_server_script = "start .\Binaries\win64\kfserver kf-bioticslab" + "?adminpassword=$server_webadminpassword" + "?Game=KFGameContent.KFGameInfo_Survival" + "?Difficulty=$server_difficulty" + "-Port=$server_gameport" + "-QueryPort=$server_queryport" + "-WebAdminPort=$server_webadminport"
+$run_server_script = "start .\Binaries\win64\kfserver kf-bioticslab" + "?adminpassword=$server_webadminpassword" + $server_gamemode + "?Difficulty=$server_difficulty" + "-Port=$server_gameport" + "-QueryPort=$server_queryport" + "-WebAdminPort=$server_webadminport"
 Set-Content $server_start_bat $run_server_script
