@@ -1,11 +1,49 @@
 echo "킬링플로어2 데디케이트 서버 구축기  by. ㅇㅇ(1.239)"
-echo "version : 0.3"
+echo "version : 0.4"
+ function Check_Java_Installed {
+    $check_java_install = & cmd /c "java -version 2>&1"
+     if ($check_java_install | Select-String -Pattern "java version `"11.*`"." -Quiet){
+         echo "자바11 설치가 확인되었습니다."
+         Install_start
+     }
+     else{
+        cls
+        echo "자바가 설치되어있지 않습니다"
+        echo "설치에는 자바 11이후 버전이 필요합니다"
+        echo "만약 자바 11 이상이 설치되어있음에도 인식에 실패하였으면 아래 문구를 입력해 설치를 강제로 진행하십시오"
+        echo "force install"
+        $java_force_install = Read-Host "답 "
+        if ($java_force_install -eq "force install") {
+            Install_start
+        }
+        else {
+            Install_close
+        }
+     }
+ }
+ function Install_close {
+    echo "답이 틀렸습니다. 설치를 종료하고 자바 다운로드 페이지로 연결합니다."
+    Read-Host "엔터를 눌러 자바11 다운로드 페이지로 연결합니다"
+    start-process "https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot"
+    exit
+ }
+ function Start_Portmapper {
+ $myip = ((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
+ java -jar $runportmapper -add -externalPort $server_gameport -internalPort $server_gameport -ip $myip -protocol udp
+ java -jar $runportmapper -add -externalPort $server_queryport -internalPort $server_queryport -ip $myip -protocol udp
+ java -jar $runportmapper -add -externalPort $server_webadminport -internalPort $server_webadminport -ip $myip -protocol tcp
+ java -jar $runportmapper -add -externalPort $server_steamport -internalPort $server_steamport -ip $myip -protocol udp
+ java -jar $runportmapper -add -externalPort $server_ntpport -internalPort $server_ntpport -ip $myip -protocol udp
+ }
+ function Install_start {
 $install = Read-Host "킬링플로어2 데디케이트 서버를 설치할 폴더를 지정해주세요"
 $steamcmd = $install + "\cmd"
 mkdir $steamcmd
 
 $runcmd = $steamcmd + "\steamcmd.exe"
+$runportmapper = $steamcmd + "\portmapper-2.2.1.jar"
 wget https://github.com/mkco5162/steamcmd/raw/main/steamcmd.exe -outfile $runcmd
+wget https://github.com/mkco5162/steamcmd/raw/main/portmapper-2.2.1.jar -outfile $runportmapper
 #Invoke-item $steamcmd
 $cmdscript = $steamcmd + "\Install_KF2.txt"
 Set-Content $cmdscript "login anonymous`nforce_install_dir $install`napp_update 232130 validate`nexit"
@@ -20,11 +58,9 @@ $Serverinstall = $install + "\Binaries\win64\KFServer"
 Start-Process $Serverinstall
 echo ""
 echo "최초 서버 실행이 완료되면 20초 후 설치가 계속됩니다"
-#echo "서버 정상 실행이 완료되면 종료해주시기 바랍니다"
 echo ""
 Start-Sleep -s 23
 Stop-Process -Name "kfserver"
-#wait-process -name kfserver
 
 $Filepath1 = $install + "\KFGame\Config\PCServer-KFEngine.ini"
 (Get-Content $Filepath1).replace("[IpDrv.TcpNetDriver]","[IpDrv.TcpNetDriver]`nDownloadManagers=OnlineSubsystemSteamworks.SteamWorkshopDownload") | Set-Content $Filepath1
@@ -61,15 +97,21 @@ if (0 -eq $server_queryport)
     $server_queryport = 27015
 }
 echo ""
-echo "웹어드민 포트 : 웹어드민 접속시 이용하는 포트 (기본값 : 8080)"
+echo "기본값인 8080번 포트가 uPNP사용 불가하여 8888 사용을 권장합니다"
+echo "웹어드민 포트 : 웹어드민 접속시 이용하는 포트 (기본값 : 8888)"
 $server_webadminport = Read-Host "웹어드민 포트 입력 "
 echo ""
 if (0 -eq $server_webadminport)
 {
-    echo "웹어드민 포트가 0 입니다. 기본값인 8080으로 지정합니다"
-    $server_webadminport = 8080
+    echo "웹어드민 포트가 0 입니다. 기본값인 8888으로 지정합니다"
+    $server_webadminport = 8888
 }
 $server_steamport = 20560
+$server_ntpport = 123
+Start_Portmapper
+########################
+########################
+<#
 echo ""
 echo ""
 echo "포트포워딩이 필요한 포트를 안내드립니다."
@@ -84,6 +126,9 @@ echo "스팀 포트        20560        UDP"
 echo "NTP 포트         123          UDP"
 echo ""
 echo ""
+#>
+########################
+########################
 $server_webadminpassword = Read-Host "웹어드민에 사용할 암호 입력 "
 echo ""
 $server_difficulty = Read-Host "서버 난이도 설정 (보통:0, 어려움:1, 자살행위:2, 생지옥:3) "
@@ -139,3 +184,5 @@ Read-Host -Prompt "설정이 완료되었습니다. 엔터를 눌러 설치를 �
 $server_start_bat = $install + "\서버실행기.bat"
 $run_server_script = "start .\Binaries\win64\kfserver kf-bioticslab" + "?adminpassword=$server_webadminpassword" + $server_gamemode + "?Difficulty=$server_difficulty" + "-Port=$server_gameport" + "-QueryPort=$server_queryport" + "-WebAdminPort=$server_webadminport"
 Set-Content $server_start_bat $run_server_script
+}
+Check_Java_Installed
