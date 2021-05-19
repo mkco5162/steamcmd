@@ -2,20 +2,8 @@
 [KF-SlipgateComplex KFMapSummary]
 MapName=KF-SlipgateComplex
 1097832055
-[Collision_KF1_Farm KFMapSummary]
-MapName=Collision_KF1_Farm
-1097832055
-[Geo_KF1_Farm KFMapSummary]
-MapName=Geo_KF1_Farm
-1097832055
 [KF-KF1_Farm KFMapSummary]
 MapName=KF-KF1_Farm
-1097832055
-[Light_KF1_Farm KFMapSummary]
-MapName=Light_KF1_Farm
-1097832055
-[Pathing_KF1_Farm KFMapSummary]
-MapName=Pathing_KF1_Farm
 1102122008
 [KF-ZedsDiner KFMapSummary]
 MapName=KF-ZedsDiner
