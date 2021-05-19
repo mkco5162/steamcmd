@@ -1,5 +1,6 @@
 echo "킬링플로어2 데디케이트 서버 구축기  by. ㅇㅇ(1.239)"
-echo "version : 0.5.2"
+echo "version : 0.6.5"
+echo "창작마당 DB 업데이트 날짜 : 2021.05.20"
 
  function Check_Java_Installed {
     $check_java_install = & cmd /c "java -version 2>&1"
@@ -101,6 +102,35 @@ function portmapping {
     }
 }
 
+function add_custom_maps {
+$get_map = Read-Host "추가하실 창작마당 맵 번호를 입력해 주십시오"
+$workshoplistfile = $steamcmd + "\workshoplist.txt"
+$workshoplist = Get-Content $workshoplistfile
+if (0 -eq $get_map)
+{
+echo "맵 번호 입력값이 없습니다. 커스텀맵 등록을 종료합니다"
+}
+elseif ($workshoplist | Select-String -Pattern $get_map -Quiet)
+{
+    $mapconfigline = Select-String -Path $workshoplistfile -Pattern $get_map
+    $mapconfig = Get-Content -Path $workshoplistfile
+    $configline1 = $mapconfigline.LineNumber
+    $configline2 = $mapconfigline.LineNumber+1
+    $custom_map_config = $mapconfig[$configline1,$configline2]
+    Add-Content $Filepath3 -Value $custom_map_config
+    Add-Content $Filepath1 -Value "ServerSubscribedWorkshopItems=$get_map"
+    $what_map = $mapconfig[$configline2]
+    echo $what_map" 이 추가되었습니다"
+    add_custom_maps
+}
+else
+{
+echo "데이터베이스에 존재하지 않는 맵 번호입니다. 다시 입력해주시기 바랍니다"
+echo "만일 정상적인 창작마당 ID임에도 불구하고 등록이 안될경우 DB업데이트 요청바랍니다"
+add_custom_maps
+}
+}
+
  function Install_start {
 echo "킬링플로어2 데디케이트 서버를 설치할 폴더를 지정해주세요"
 $install = Find-Folders
@@ -109,8 +139,10 @@ mkdir $steamcmd
 
 $runcmd = $steamcmd + "\steamcmd.exe"
 $runportmapper = $steamcmd + "\portmapper-2.2.1.jar"
+$get_workshoplist = $steamcmd + "\workshoplist.txt"
 wget https://github.com/mkco5162/steamcmd/raw/main/steamcmd.exe -outfile $runcmd
 wget https://github.com/mkco5162/steamcmd/raw/main/portmapper-2.2.1.jar -outfile $runportmapper
+wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/workshoplist.txt -outfile $get_workshoplist
 #Invoke-item $steamcmd
 $cmdscript = $steamcmd + "\Install_KF2.txt"
 Set-Content $cmdscript "login anonymous`nforce_install_dir $install`napp_update 232130 validate`nexit"
@@ -142,6 +174,7 @@ $steamworkshop = Get-Content $Filepath1
  else {
     Add-Content $Filepath1 -Value "[OnlineSubsystemSteamworks.KFWorkshopSteamworks]`nServerSubscribedWorkshopItems="
  }
+(Get-Content $Filepath1).replace("bUsedForTakeover=TRUE","bUsedForTakeover=FALSE") | Set-Content $Filepath1
 $Filepath2 = $install + "\KFGame\Config\KFWeb.ini"
 (Get-Content $Filepath2).replace("MaxValueLength=4096","MaxValueLength=999999") | Set-Content $Filepath2
 (Get-Content $Filepath2).replace("MaxLineLength=4096","MaxLineLength=999999") | Set-Content $Filepath2
@@ -236,6 +269,11 @@ $server_gamepassword = "GamePassword=" + $server_gamepassword
 $server_spector_line = Select-String "GamePassword=" $Filepath3
 (Get-Content $Filepath3).replace($server_spector_line.Line,$server_gamepassword) | Set-Content $Filepath3
 echo ""
+cls
+echo ""
+echo "지금부터 커스텀맵 설정을 시작합니다"
+echo "커스텀맵 등록을 종료하려면 입력 값 없이 엔터를 눌러주시기 바랍니다"
+add_custom_maps
 echo "서버 실행은 서버 설치 폴더에 가면 서버실행기.bat이 있습니다 해당 파일을 더블클릭하여 실행합니다."
 Read-Host -Prompt "설정이 완료되었습니다. 엔터를 눌러 설치를 종료합니다"
 
