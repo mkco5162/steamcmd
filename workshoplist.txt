@@ -1,0 +1,2220 @@
+1086468006
+[KF-SlipgateComplex KFMapSummary]
+MapName=KF-SlipgateComplex
+1097832055
+[Collision_KF1_Farm KFMapSummary]
+MapName=Collision_KF1_Farm
+1097832055
+[Geo_KF1_Farm KFMapSummary]
+MapName=Geo_KF1_Farm
+1097832055
+[KF-KF1_Farm KFMapSummary]
+MapName=KF-KF1_Farm
+1097832055
+[Light_KF1_Farm KFMapSummary]
+MapName=Light_KF1_Farm
+1097832055
+[Pathing_KF1_Farm KFMapSummary]
+MapName=Pathing_KF1_Farm
+1102122008
+[KF-ZedsDiner KFMapSummary]
+MapName=KF-ZedsDiner
+1110018387
+[KF-ZedIslandgt KFMapSummary]
+MapName=KF-ZedIslandgt
+1111727089
+[KF-Ravenholm KFMapSummary]
+MapName=KF-Ravenholm
+1115862210
+[KF-CytologyLab KFMapSummary]
+MapName=KF-CytologyLab
+1120563313
+[KF-GrooveYard_VALENTINE KFMapSummary]
+MapName=KF-GrooveYard_VALENTINE
+1130264785
+[KF-DeepingWall KFMapSummary]
+MapName=KF-DeepingWall
+1135196603
+[KF-Jaywalkers_Tunnel KFMapSummary]
+MapName=KF-Jaywalkers_Tunnel
+1150705478
+[KF-Edge_Of_Reality KFMapSummary]
+MapName=KF-Edge_Of_Reality
+1154872725
+[KF-HotelZed_Damnation KFMapSummary]
+MapName=KF-HotelZed_Damnation
+1158143366
+[KF-NachtDerUntoten KFMapSummary]
+MapName=KF-NachtDerUntoten
+1180305080
+[kf-crystalcaverns_new_NOTAGS KFMapSummary]
+MapName=kf-crystalcaverns_new_NOTAGS
+1210703659
+[KF-KillingPool KFMapSummary]
+MapName=KF-KillingPool
+1238893387
+[KF-TRON-VR KFMapSummary]
+MapName=KF-TRON-VR
+1258411772
+[KF-Biolapse KFMapSummary]
+MapName=KF-Biolapse
+1261082953
+[KF-MayanArena KFMapSummary]
+MapName=KF-MayanArena
+1262549720
+[KF-Nuked-Beta KFMapSummary]
+MapName=KF-Nuked-Beta
+1262586243
+[KF-Defence_Thyself_Day_Fin3 KFMapSummary]
+MapName=KF-Defence_Thyself_Day_Fin3
+1270120351
+[KF-UT-FacingWorlds-Classic-2004 KFMapSummary]
+MapName=KF-UT-FacingWorlds-Classic-2004
+1272751053
+[KF-Defence-M1 KFMapSummary]
+MapName=KF-Defence-M1
+1276280089
+[KF-ZedField KFMapSummary]
+MapName=KF-ZedField
+1317163680
+[KF-TheGreatWall_Invernalia KFMapSummary]
+MapName=KF-TheGreatWall_Invernalia
+1319398026
+[KF-4Rooms KFMapSummary]
+MapName=KF-4Rooms
+1325371375
+[KF-ASHES KFMapSummary]
+MapName=KF-ASHES
+1336616381
+[KF-ElAnexo KFMapSummary]
+MapName=KF-ElAnexo
+1337395223
+[KF-Remilly_Test_Map KFMapSummary]
+MapName=KF-Remilly_Test_Map
+1343393833
+[KF-BridgeHoldout KFMapSummary]
+MapName=KF-BridgeHoldout
+1349608011
+[KF-Stalker-Garbage KFMapSummary]
+MapName=KF-Stalker-Garbage
+1349637035
+[KF-AbandonedSlaughterFacility_Kf2arg KFMapSummary]
+MapName=KF-AbandonedSlaughterFacility_Kf2arg
+1349637035
+[KF-Area52_Kf2arg KFMapSummary]
+MapName=KF-Area52_Kf2arg
+1349637035
+[KF-AsylumRevived_Kf2arg KFMapSummary]
+MapName=KF-AsylumRevived_Kf2arg
+1349637035
+[KF-BallconyDefense_Kf2arg KFMapSummary]
+MapName=KF-BallconyDefense_Kf2arg
+1349637035
+[KF-BattleRoyale_Kf2arg KFMapSummary]
+MapName=KF-BattleRoyale_Kf2arg
+1349637035
+[KF-Big_Green_Kf2arg KFMapSummary]
+MapName=KF-Big_Green_Kf2arg
+1349637035
+[KF-BioticsLabUK_Kf2arg KFMapSummary]
+MapName=KF-BioticsLabUK_Kf2arg
+1349637035
+[KF-BioWarehouse_Kf2arg KFMapSummary]
+MapName=KF-BioWarehouse_Kf2arg
+1349637035
+[KF-BlockFort_Kf2arg KFMapSummary]
+MapName=KF-BlockFort_Kf2arg
+1349637035
+[KF-C28_Kf2arg KFMapSummary]
+MapName=KF-C28_Kf2arg
+1349637035
+[KF-ChillwindPlateau_Kf2arg KFMapSummary]
+MapName=KF-ChillwindPlateau_Kf2arg
+1349637035
+[KF-ClubConfession_Kf2arg KFMapSummary]
+MapName=KF-ClubConfession_Kf2arg
+1349637035
+[KF-Cube_Kf2arg KFMapSummary]
+MapName=KF-Cube_Kf2arg
+1349637035
+[KF-CytologyLab_Kf2arg KFMapSummary]
+MapName=KF-CytologyLab_Kf2arg
+1349637035
+[KF-Deadline_Kf2arg KFMapSummary]
+MapName=KF-Deadline_Kf2arg
+1349637035
+[KF-Deadline_Suicide_Kf2arg KFMapSummary]
+MapName=KF-Deadline_Suicide_Kf2arg
+1349637035
+[KF-Dead_In_Limbo_Kf2arg KFMapSummary]
+MapName=KF-Dead_In_Limbo_Kf2arg
+1349637035
+[KF-DeathBasin_Kf2arg KFMapSummary]
+MapName=KF-DeathBasin_Kf2arg
+1349637035
+[KF-DefenceCube_Kf2arg KFMapSummary]
+MapName=KF-DefenceCube_Kf2arg
+1349637035
+[KF-Defence_Cgb_Kf2arg KFMapSummary]
+MapName=KF-Defence_Cgb_Kf2arg
+1349637035
+[KF-Dystopia2029_Kf2arg KFMapSummary]
+MapName=KF-Dystopia2029_Kf2arg
+1349637035
+[KF-GenesisComplex_Kf2arg KFMapSummary]
+MapName=KF-GenesisComplex_Kf2arg
+1349637035
+[KF-GrooveYardHalloween_Kf2arg KFMapSummary]
+MapName=KF-GrooveYardHalloween_Kf2arg
+1349637035
+[KF-HeavensGate_Kf2arg KFMapSummary]
+MapName=KF-HeavensGate_Kf2arg
+1349637035
+[KF-HellTower_Kf2arg KFMapSummary]
+MapName=KF-HellTower_Kf2arg
+1349637035
+[KF-HelmsDeep_Kf2arg KFMapSummary]
+MapName=KF-HelmsDeep_Kf2arg
+1349637035
+[KF-Homestead_Kf2arg KFMapSummary]
+MapName=KF-Homestead_Kf2arg
+1349637035
+[KF-HorzineArena_Kf2arg KFMapSummary]
+MapName=KF-HorzineArena_Kf2arg
+1349637035
+[KF-HouseInTheWoods_Kf2arg KFMapSummary]
+MapName=KF-HouseInTheWoods_Kf2arg
+1349637035
+[KF-JaywalkersTunnel_Kf2arg KFMapSummary]
+MapName=KF-JaywalkersTunnel_Kf2arg
+1349637035
+[KF-Kevinarium_Kf2arg KFMapSummary]
+MapName=KF-Kevinarium_Kf2arg
+1349637035
+[KF-KillZoneVirtuality_Kf2arg KFMapSummary]
+MapName=KF-KillZoneVirtuality_Kf2arg
+1349637035
+[KF-LastStand_Kf2arg KFMapSummary]
+MapName=KF-LastStand_Kf2arg
+1349637035
+[KF-LostRuins_Kf2arg KFMapSummary]
+MapName=KF-LostRuins_Kf2arg
+1349637035
+[KF-MarioBunker_Kf2arg KFMapSummary]
+MapName=KF-MarioBunker_Kf2arg
+1349637035
+[KF-MiddleOfNowhere_Kf2arg KFMapSummary]
+MapName=KF-MiddleOfNowhere_Kf2arg
+1349637035
+[KF-Netherhold_Kf2arg KFMapSummary]
+MapName=KF-Netherhold_Kf2arg
+1349637035
+[KF-NewStormDefence_Kf2arg KFMapSummary]
+MapName=KF-NewStormDefence_Kf2arg
+1349637035
+[KF-PandoraSquare_Kf2arg KFMapSummary]
+MapName=KF-PandoraSquare_Kf2arg
+1349637035
+[KF-ParisWaterFront_Kf2arg KFMapSummary]
+MapName=KF-ParisWaterFront_Kf2arg
+1349637035
+[KF-PyramidDefense_Kf2arg KFMapSummary]
+MapName=KF-PyramidDefense_Kf2arg
+1349637035
+[KF-Secret_Base_Toxic_Kf2arg KFMapSummary]
+MapName=KF-Secret_Base_Toxic_Kf2arg
+1349637035
+[KF-SpaceportPerdition_Kf2arg KFMapSummary]
+MapName=KF-SpaceportPerdition_Kf2arg
+1349637035
+[KF-SpiralSlaughter_Kf2arg KFMapSummary]
+MapName=KF-SpiralSlaughter_Kf2arg
+1349637035
+[KF-TinyTown_Kf2arg KFMapSummary]
+MapName=KF-TinyTown_Kf2arg
+1349637035
+[KF-Training_Deluxe_Kf2arg KFMapSummary]
+MapName=KF-Training_Deluxe_Kf2arg
+1349637035
+[KF-VerticalityNight_Kf2arg KFMapSummary]
+MapName=KF-VerticalityNight_Kf2arg
+1349637035
+[KF-Verticality_Kf2arg KFMapSummary]
+MapName=KF-Verticality_Kf2arg
+1349637035
+[KF-ZedSplosion_Kf2arg KFMapSummary]
+MapName=KF-ZedSplosion_Kf2arg
+1363355300
+[KF-Subduction KFMapSummary]
+MapName=KF-Subduction
+1368143986
+[KF-Gluttony KFMapSummary]
+MapName=KF-Gluttony
+1381222380
+[KF-This_Vortal_Coil KFMapSummary]
+MapName=KF-This_Vortal_Coil
+1387351061
+[KF-MP2_ShootingGallery KFMapSummary]
+MapName=KF-MP2_ShootingGallery
+1388689058
+[KF-Dark_Night KFMapSummary]
+MapName=KF-Dark_Night
+1395769266
+[KF-SR KFMapSummary]
+MapName=KF-SR
+1404832804
+[KF-pd2HMday1_v9 KFMapSummary]
+MapName=KF-pd2HMday1_v9
+1404834954
+[KF-pd2JWShop_v3 KFMapSummary]
+MapName=KF-pd2JWShop_v3
+1404838407
+[KF-pd2WDogDay2_v7 KFMapSummary]
+MapName=KF-pd2WDogDay2_v7
+1404877261
+[kf-badlands-tf2 KFMapSummary]
+MapName=kf-badlands-tf2
+1411633839
+[KF-TheSunkenCity_Endless KFMapSummary]
+MapName=KF-TheSunkenCity_Endless
+1411636382
+[KF-Fire_Ice KFMapSummary]
+MapName=KF-Fire_Ice
+1415891314
+[KF-Hospital KFMapSummary]
+MapName=KF-Hospital
+1420275196
+[KF-DeadZone_Kf2arg KFMapSummary]
+MapName=KF-DeadZone_Kf2arg
+1422184357
+[KF-RiverCanyon KFMapSummary]
+MapName=KF-RiverCanyon
+1422415080
+[KF-finlandwinterday KFMapSummary]
+MapName=KF-finlandwinterday
+1425596908
+[KF-goodmap4solo KFMapSummary]
+MapName=KF-goodmap4solo
+1431182385
+[KF-Alicia_Madness_Returns_Arena KFMapSummary]
+MapName=KF-Alicia_Madness_Returns_Arena
+1449325690
+[KF-Defence_Thyself_Deluxe_Night KFMapSummary]
+MapName=KF-Defence_Thyself_Deluxe_Night
+1455450530
+[KF-LightCross KFMapSummary]
+MapName=KF-LightCross
+1457507581
+[KF-Octagon KFMapSummary]
+MapName=KF-Octagon
+1457702559
+[KF-All_Big KFMapSummary]
+MapName=KF-All_Big
+1457916911
+[KF-Door_Defense_2 KFMapSummary]
+MapName=KF-Door_Defense_2
+1459063164
+[KF-Stalker-Darkscape KFMapSummary]
+MapName=KF-Stalker-Darkscape
+1461879911
+[KF-OfficesRE KFMapSummary]
+MapName=KF-OfficesRE
+1468540731
+[KF-Mountain_Hut KFMapSummary]
+MapName=KF-Mountain_Hut
+1481878574
+[KF-BurningParisNightDay KFMapSummary]
+MapName=KF-BurningParisNightDay
+1492811444
+[KF-RawrArena2 KFMapSummary]
+MapName=KF-RawrArena2
+1498351794
+[KF-ApexB5-FIX KFMapSummary]
+MapName=KF-ApexB5-FIX
+1498677457
+[KF-420-GanjaFarm KFMapSummary]
+MapName=KF-420-GanjaFarm
+1503129313
+[KF-DesolationOriginal KFMapSummary]
+MapName=KF-DesolationOriginal
+1509629473
+[KF-Pit KFMapSummary]
+MapName=KF-Pit
+1514708927
+[KF-FartBox KFMapSummary]
+MapName=KF-FartBox
+1514769869
+[KF-NewStormDeFookUp KFMapSummary]
+MapName=KF-NewStormDeFookUp
+1516437613
+[KF-MP2_Pipeline KFMapSummary]
+MapName=KF-MP2_Pipeline
+1516807451
+[KF-HostileUnderGround KFMapSummary]
+MapName=KF-HostileUnderGround
+1517250054
+[KF-HorzineArena-B2-Voshed KFMapSummary]
+MapName=KF-HorzineArena-B2-Voshed
+1517306292
+[KF-OutoftheFog KFMapSummary]
+MapName=KF-OutoftheFog
+1518146777
+[KF-BringItOn KFMapSummary]
+MapName=KF-BringItOn
+1519057494
+[KF-CanvilleEvening KFMapSummary]
+MapName=KF-CanvilleEvening
+1519841049
+[KF-Scavenger KFMapSummary]
+MapName=KF-Scavenger
+1520723973
+[KF-MP2_SpiderComplex KFMapSummary]
+MapName=KF-MP2_SpiderComplex
+1521969231
+[KF-Tower_Defence KFMapSummary]
+MapName=KF-Tower_Defence
+1522232878
+[KF-RoundAbout KFMapSummary]
+MapName=KF-RoundAbout
+1524194412
+[KF-ZedLandingOnShrooms KFMapSummary]
+MapName=KF-ZedLandingOnShrooms
+1527864466
+[KF-CanvilleChristmas KFMapSummary]
+MapName=KF-CanvilleChristmas
+1529672175
+[KF-Hot_Here KFMapSummary]
+MapName=KF-Hot_Here
+1532649739
+[KF-CS_MilitiaFix KFMapSummary]
+MapName=KF-CS_MilitiaFix
+1533467546
+[KF-MillTown-BurgerKing KFMapSummary]
+MapName=KF-MillTown-BurgerKing
+1533793125
+[KF-Candlesmoke KFMapSummary]
+MapName=KF-Candlesmoke
+1533855709
+[KF-MotherBase KFMapSummary]
+MapName=KF-MotherBase
+1535618881
+[KF-Death_Marsh KFMapSummary]
+MapName=KF-Death_Marsh
+1535895823
+[KF-16Stack KFMapSummary]
+MapName=KF-16Stack
+1536001719
+[KF-Dust2Classic KFMapSummary]
+MapName=KF-Dust2Classic
+1540163012
+[KF-KF1-FrightYard KFMapSummary]
+MapName=KF-KF1-FrightYard
+1540167057
+[KF-survivor KFMapSummary]
+MapName=KF-survivor
+1544185476
+[KF-ThePit KFMapSummary]
+MapName=KF-ThePit
+1545119022
+[KF-AlienArena KFMapSummary]
+MapName=KF-AlienArena
+1545352461
+[KF-toomuch KFMapSummary]
+MapName=KF-toomuch
+1545465473
+[KF-inferno KFMapSummary]
+MapName=KF-inferno
+1545482973
+[KF-SpaceWhite KFMapSummary]
+MapName=KF-SpaceWhite
+1545687721
+[KF-freeline KFMapSummary]
+MapName=KF-freeline
+1546541844
+[KF-Highschool KFMapSummary]
+MapName=KF-Highschool
+1547146946
+[KF-LakeEanor KFMapSummary]
+MapName=KF-LakeEanor
+1547462279
+[KF-Pit-Halloween KFMapSummary]
+MapName=KF-Pit-Halloween
+1548790206
+[KF-BArena-v11 KFMapSummary]
+MapName=KF-BArena-v11
+1549282753
+[KF-RE4_Village_beta KFMapSummary]
+MapName=KF-RE4_Village_beta
+1549624468
+[KF-SwampBridge KFMapSummary]
+MapName=KF-SwampBridge
+1550366246
+[KF-HalloweenInferno KFMapSummary]
+MapName=KF-HalloweenInferno
+1551913612
+[KF-NachtDerUntoten_TraderPod KFMapSummary]
+MapName=KF-NachtDerUntoten_TraderPod
+1552908532
+[KF-NoMercy KFMapSummary]
+MapName=KF-NoMercy
+1553390815
+[KF-WestLondonRemake KFMapSummary]
+MapName=KF-WestLondonRemake
+1555858955
+[KF-PK-Catacombs KFMapSummary]
+MapName=KF-PK-Catacombs
+1559305444
+[KF-Chilly_Cave KFMapSummary]
+MapName=KF-Chilly_Cave
+1559402293
+[KF-Husk_Factory KFMapSummary]
+MapName=KF-Husk_Factory
+1559879733
+[KF-Chroma_Key KFMapSummary]
+MapName=KF-Chroma_Key
+1560030802
+[KF-KF1_Wyre KFMapSummary]
+MapName=KF-KF1_Wyre
+1561309716
+[KF-TAI19KAN KFMapSummary]
+MapName=KF-TAI19KAN
+1561674172
+[KF-TheLibrary KFMapSummary]
+MapName=KF-TheLibrary
+1562873896
+[KF-PK-Enclave KFMapSummary]
+MapName=KF-PK-Enclave
+1563850037
+[KF-LightBridges KFMapSummary]
+MapName=KF-LightBridges
+1563967613
+[KF-WithTeeth KFMapSummary]
+MapName=KF-WithTeeth
+1564613622
+[KF-BArenaLarge-v3 KFMapSummary]
+MapName=KF-BArenaLarge-v3
+1565726152
+[KF-KF1_TheForestHouse KFMapSummary]
+MapName=KF-KF1_TheForestHouse
+1565865307
+[KF-GreatWall KFMapSummary]
+MapName=KF-GreatWall
+1569720628
+[KF-ShadowZone_Remastered KFMapSummary]
+MapName=KF-ShadowZone_Remastered
+1570211060
+[KF-Cave_defense_remake KFMapSummary]
+MapName=KF-Cave_defense_remake
+1571524003
+[KF-PK-Colosseum KFMapSummary]
+MapName=KF-PK-Colosseum
+1572807448
+[KF-LightPyramid KFMapSummary]
+MapName=KF-LightPyramid
+1572935169
+[KF-Killzone_Station_0_55 KFMapSummary]
+MapName=KF-Killzone_Station_0_55
+1574620728
+[KF-ShootingGalleryV2 KFMapSummary]
+MapName=KF-ShootingGalleryV2
+1574624809
+[KF-ChaoristmasArena KFMapSummary]
+MapName=KF-ChaoristmasArena
+1576022361
+[KF-Stalker-Rostok-Bar KFMapSummary]
+MapName=KF-Stalker-Rostok-Bar
+1576944239
+[KF-SuperPerkTrainingDeluxe-v7d KFMapSummary]
+MapName=KF-SuperPerkTrainingDeluxe-v7d
+1578303139
+[KF-DieSector_Original KFMapSummary]
+MapName=KF-DieSector_Original
+1578901457
+[KF-ShootEmUp KFMapSummary]
+MapName=KF-ShootEmUp
+1581076659
+[KF-Distillery KFMapSummary]
+MapName=KF-Distillery
+1582000062
+[KF-RatsCafeXmas KFMapSummary]
+MapName=KF-RatsCafeXmas
+1582789064
+[KF-Paris_Bridge_V5 KFMapSummary]
+MapName=KF-Paris_Bridge_V5
+1584936478
+[KF-RawrsCube KFMapSummary]
+MapName=KF-RawrsCube
+1585335533
+[KF-BArena-v11-Xmas KFMapSummary]
+MapName=KF-BArena-v11-Xmas
+1588676168
+[KF-ThreeDomes KFMapSummary]
+MapName=KF-ThreeDomes
+1589833031
+[KF-SilentNight KFMapSummary]
+MapName=KF-SilentNight
+1590009407
+[KF-Alicia_Madness_Returns_The_House_of_Dolls KFMapSummary]
+MapName=KF-Alicia_Madness_Returns_The_House_of_Dolls
+1595284884
+[KF-ThrillsChills KFMapSummary]
+MapName=KF-ThrillsChills
+1595708599
+[KF-RatsBedroomXmas KFMapSummary]
+MapName=KF-RatsBedroomXmas
+1597415975
+[KF-IceArena_lavenza KFMapSummary]
+MapName=KF-IceArena_lavenza
+1599126598
+[KF-Prison_blocked KFMapSummary]
+MapName=KF-Prison_blocked
+1599128301
+[KF-RiversideVillage_fix KFMapSummary]
+MapName=KF-RiversideVillage_fix
+1600600015
+[KF-Pit-Xmas KFMapSummary]
+MapName=KF-Pit-Xmas
+1602880565
+[KF-Hellscape KFMapSummary]
+MapName=KF-Hellscape
+1603111908
+[KF-OperaHouse KFMapSummary]
+MapName=KF-OperaHouse
+1607589539
+[KF-GoreHouse KFMapSummary]
+MapName=KF-GoreHouse
+1608430037
+[KF-TenkaichiBudokai KFMapSummary]
+MapName=KF-TenkaichiBudokai
+1612620114
+[KF-Playland KFMapSummary]
+MapName=KF-Playland
+1614083409
+[KF-Coast_Defence KFMapSummary]
+MapName=KF-Coast_Defence
+1615579893
+[KF-Amuse_Complex KFMapSummary]
+MapName=KF-Amuse_Complex
+1617286052
+[KF-ZedDrop KFMapSummary]
+MapName=KF-ZedDrop
+1617499928
+[KF-Tomb KFMapSummary]
+MapName=KF-Tomb
+1618052578
+[KF-StarWarsTheArena KFMapSummary]
+MapName=KF-StarWarsTheArena
+1618411022
+[KF-Canals KFMapSummary]
+MapName=KF-Canals
+1619900478
+[KF-BackToBerlin(April2019) KFMapSummary]
+MapName=KF-BackToBerlin(April2019)
+1621662074
+[KF-WheresTheSauce KFMapSummary]
+MapName=KF-WheresTheSauce
+1623950385
+[KF-StarWarsGeonosisArena KFMapSummary]
+MapName=KF-StarWarsGeonosisArena
+1626336872
+[KF-2way KFMapSummary]
+MapName=KF-2way
+1628213947
+[KF-BattleShips KFMapSummary]
+MapName=KF-BattleShips
+1629212123
+[KF-StarWarsKamino KFMapSummary]
+MapName=KF-StarWarsKamino
+1629586785
+[KF-Stalker-RedForest KFMapSummary]
+MapName=KF-Stalker-RedForest
+1629999304
+[KF-CyberWorld KFMapSummary]
+MapName=KF-CyberWorld
+1634556813
+[KF-ZASHIKI KFMapSummary]
+MapName=KF-ZASHIKI
+1637705290
+[KF-Sealab KFMapSummary]
+MapName=KF-Sealab
+1638750850
+[KF-RatsCafeParis KFMapSummary]
+MapName=KF-RatsCafeParis
+1638909363
+[KF-DeepingWall_Edited KFMapSummary]
+MapName=KF-DeepingWall_Edited
+1639926637
+[KF-BarrioMuerte KFMapSummary]
+MapName=KF-BarrioMuerte
+1644632571
+[KF-LightSlasher KFMapSummary]
+MapName=KF-LightSlasher
+1645457541
+[KF-HorzineManor KFMapSummary]
+MapName=KF-HorzineManor
+1646796659
+[KF-SiloSeven KFMapSummary]
+MapName=KF-SiloSeven
+1646896794
+[KF-Big_Green_Fortified KFMapSummary]
+MapName=KF-Big_Green_Fortified
+1647140019
+[KF-DEPOT KFMapSummary]
+MapName=KF-DEPOT
+1650376217
+[KF-TheLibrary_2018 KFMapSummary]
+MapName=KF-TheLibrary_2018
+1650682770
+[KF-3DChess KFMapSummary]
+MapName=KF-3DChess
+1661940146
+[KF-DinoWorld KFMapSummary]
+MapName=KF-DinoWorld
+1661980307
+[KF-Aftermath KFMapSummary]
+MapName=KF-Aftermath
+1665363016
+[KF-Zedoland-2 KFMapSummary]
+MapName=KF-Zedoland-2
+1667879196
+[KF-PollutionIndustries KFMapSummary]
+MapName=KF-PollutionIndustries
+1668682791
+[KF-Mist KFMapSummary]
+MapName=KF-Mist
+1668845810
+[kf-concrete_halls KFMapSummary]
+MapName=kf-concrete_halls
+1670339358
+[KF-TwistedStory KFMapSummary]
+MapName=KF-TwistedStory
+1672571152
+[KF-LeningradStormv1-3 KFMapSummary]
+MapName=KF-LeningradStormv1-3
+1672635448
+[KF-District_VII_Objective KFMapSummary]
+MapName=KF-District_VII_Objective
+1672639069
+[KF-District_VII_Survival KFMapSummary]
+MapName=KF-District_VII_Survival
+1672691979
+[KF-TrainingGrounds KFMapSummary]
+MapName=KF-TrainingGrounds
+1672804778
+[KF-Hellscape KFMapSummary]
+MapName=KF-Hellscape
+1673269438
+[KF-Arctic_Station11 KFMapSummary]
+MapName=KF-Arctic_Station11
+1680960405
+[KF-WreckedTreeHouse KFMapSummary]
+MapName=KF-WreckedTreeHouse
+1681745056
+[KF-TragicKingdom-Fix KFMapSummary]
+MapName=KF-TragicKingdom-Fix
+1681801783
+[KF-ToiletMap KFMapSummary]
+MapName=KF-ToiletMap
+1683842902
+[KF-Tyro KFMapSummary]
+MapName=KF-Tyro
+1685894328
+[KF-UT-FacingWorlds-Classic-2004_Gravity KFMapSummary]
+MapName=KF-UT-FacingWorlds-Classic-2004_Gravity
+1689391942
+[KF-LastLine KFMapSummary]
+MapName=KF-LastLine
+1690574026
+[KF-KillZone_Wabbitedit KFMapSummary]
+MapName=KF-KillZone_Wabbitedit
+1692413455
+[KF-TragicKingdom_Trapped KFMapSummary]
+MapName=KF-TragicKingdom_Trapped
+1692659277
+[KF-WaterHazard KFMapSummary]
+MapName=KF-WaterHazard
+1695236612
+[KF-UT_Deck16_V2 KFMapSummary]
+MapName=KF-UT_Deck16_V2
+1697823492
+[KF-ShootingGalleryV3 KFMapSummary]
+MapName=KF-ShootingGalleryV3
+1697823492
+[KF-ShootingGalleryV4 KFMapSummary]
+MapName=KF-ShootingGalleryV4
+1697990147
+[KF-HellsCryptV2 KFMapSummary]
+MapName=KF-HellsCryptV2
+1700854915
+[KF-KF1-HadleysHallway KFMapSummary]
+MapName=KF-KF1-HadleysHallway
+1702510009
+[kf-clocktown KFMapSummary]
+MapName=kf-clocktown
+1708839808
+[KF-KF1-Medieval_Fortress KFMapSummary]
+MapName=KF-KF1-Medieval_Fortress
+1709507839
+[KF-ShoppingSpree_Underground KFMapSummary]
+MapName=KF-ShoppingSpree_Underground
+1711989894
+[KF-ThorazineArenaMK3 KFMapSummary]
+MapName=KF-ThorazineArenaMK3
+1712363704
+[KF-GardenHeights KFMapSummary]
+MapName=KF-GardenHeights
+1712710386
+[KF-Nexus KFMapSummary]
+MapName=KF-Nexus
+1712957760
+[kf-ustav2 KFMapSummary]
+MapName=kf-ustav2
+1714699333
+[KF-HouseInTheWoods-V4final KFMapSummary]
+MapName=KF-HouseInTheWoods-V4final
+1716107878
+[KF-Path_To_The_Void KFMapSummary]
+MapName=KF-Path_To_The_Void
+1720854795
+[kf-playboy_clean_edition KFMapSummary]
+MapName=kf-playboy_clean_edition
+1720972930
+[kf-StateSurvivalFarmlands KFMapSummary]
+MapName=kf-StateSurvivalFarmlands
+1720993744
+[KF-PitShack KFMapSummary]
+MapName=KF-PitShack
+1721001488
+[KF-CenterTown KFMapSummary]
+MapName=KF-CenterTown
+1721025467
+[KF-Caves KFMapSummary]
+MapName=KF-Caves
+1723039982
+[KF-OneWay_Simple KFMapSummary]
+MapName=KF-OneWay_Simple
+1723052834
+[KF-FallingFloor KFMapSummary]
+MapName=KF-FallingFloor
+1730510364
+[KF-DemolitionParty KFMapSummary]
+MapName=KF-DemolitionParty
+1730754187
+[KF-DownTownCity KFMapSummary]
+MapName=KF-DownTownCity
+1736469785
+[KF-FARMHOUSE-DAY KFMapSummary]
+MapName=KF-FARMHOUSE-DAY
+1736545665
+[kf-biocola KFMapSummary]
+MapName=kf-biocola
+1740039420
+[KF-KF1-Manor-Snow KFMapSummary]
+MapName=KF-KF1-Manor-Snow
+1740642476
+[KF-Lost KFMapSummary]
+MapName=KF-Lost
+1746150011
+[KF-HeavyContainment KFMapSummary]
+MapName=KF-HeavyContainment
+1746290554
+[KF-Devils-Dollhouse-Descent KFMapSummary]
+MapName=KF-Devils-Dollhouse-Descent
+1747530597
+[KF-Amphiteatrum KFMapSummary]
+MapName=KF-Amphiteatrum
+1747968533
+[KF-TrapLand KFMapSummary]
+MapName=KF-TrapLand
+1752398772
+[KF-Chika KFMapSummary]
+MapName=KF-Chika
+1753817094
+[KF-FriendlyFire KFMapSummary]
+MapName=KF-FriendlyFire
+1755617843
+[KF-Lava_Castle KFMapSummary]
+MapName=KF-Lava_Castle
+1755901154
+[KF-Overflow KFMapSummary]
+MapName=KF-Overflow
+1755948841
+[KF-BattleRoyale_edit KFMapSummary]
+MapName=KF-BattleRoyale_edit
+1756032739
+[KF-SummonerVersusPlayers KFMapSummary]
+MapName=KF-SummonerVersusPlayers
+1756090994
+[KF-DOOM2-3_edit KFMapSummary]
+MapName=KF-DOOM2-3_edit
+1756961024
+[KF-Cube2018 KFMapSummary]
+MapName=KF-Cube2018
+1758739685
+[KF-KusoMap KFMapSummary]
+MapName=KF-KusoMap
+1759782315
+[KF-CaveDefense-v1 KFMapSummary]
+MapName=KF-CaveDefense-v1
+1760193324
+[KF-UnderAttack KFMapSummary]
+MapName=KF-UnderAttack
+1761245109
+[KF-RunRun2 KFMapSummary]
+MapName=KF-RunRun2
+1761622066
+[KF-AnimeDance KFMapSummary]
+MapName=KF-AnimeDance
+1763270196
+[KF-Stalker-Yantar KFMapSummary]
+MapName=KF-Stalker-Yantar
+1767823291
+[KF-MurderStreet KFMapSummary]
+MapName=KF-MurderStreet
+1769324055
+[KF-The_Ocean KFMapSummary]
+MapName=KF-The_Ocean
+1770092066
+[KF-VORTEX KFMapSummary]
+MapName=KF-VORTEX
+1774649072
+[KF-TrapLandAlter KFMapSummary]
+MapName=KF-TrapLandAlter
+1775293340
+[KF-TrailerPark KFMapSummary]
+MapName=KF-TrailerPark
+1777847039
+[KF-Flatgrass-Pit KFMapSummary]
+MapName=KF-Flatgrass-Pit
+1782453440
+[KF-FrightYard_Objective KFMapSummary]
+MapName=KF-FrightYard_Objective
+1784077135
+[KF-Marlen_Falls KFMapSummary]
+MapName=KF-Marlen_Falls
+1792580043
+[KF-OBJ_IceArena3_SHC KFMapSummary]
+MapName=KF-OBJ_IceArena3_SHC
+1797101324
+[Kf-ChurchOfAndyClean KFMapSummary]
+MapName=Kf-ChurchOfAndyClean
+1800705079
+[KF-Skyscraper_War KFMapSummary]
+MapName=KF-Skyscraper_War
+1806460968
+[KF-OBJ_IceArena3_UHC KFMapSummary]
+MapName=KF-OBJ_IceArena3_UHC
+1810045582
+[KF-Elysium KFMapSummary]
+MapName=KF-Elysium
+1812652641
+[KF-Random_Holdout_Hardcore KFMapSummary]
+MapName=KF-Random_Holdout_Hardcore
+1814629838
+[KF-ATAKAV2-Z KFMapSummary]
+MapName=KF-ATAKAV2-Z
+1817414767
+[KF-Tree_House_Hard_Edition KFMapSummary]
+MapName=KF-Tree_House_Hard_Edition
+1818677648
+[KF-OBJ_SharpShooting_FP KFMapSummary]
+MapName=KF-OBJ_SharpShooting_FP
+1818677648
+[KF-OBJ_SharpShooting_SC KFMapSummary]
+MapName=KF-OBJ_SharpShooting_SC
+1818677648
+[KF-OBJ_SharpShooting_SHD KFMapSummary]
+MapName=KF-OBJ_SharpShooting_SHD
+1830866439
+[KF-Galaxy_Tavern KFMapSummary]
+MapName=KF-Galaxy_Tavern
+1831182456
+[KF-Bartelby KFMapSummary]
+MapName=KF-Bartelby
+1833178824
+[KF-OmahaBeach KFMapSummary]
+MapName=KF-OmahaBeach
+1840821878
+[KF-Frozen_Lake KFMapSummary]
+MapName=KF-Frozen_Lake
+1842296920
+[KF-Favela-Fixed-Again KFMapSummary]
+MapName=KF-Favela-Fixed-Again
+1842464139
+[KF-Farm_Remastered KFMapSummary]
+MapName=KF-Farm_Remastered
+1844146304
+[KF-GlassMaze KFMapSummary]
+MapName=KF-GlassMaze
+1849051443
+[KF-HellKillZone KFMapSummary]
+MapName=KF-HellKillZone
+1850805392
+[KF-Hold_The_Door KFMapSummary]
+MapName=KF-Hold_The_Door
+1851079964
+[KF-Rack'emUp KFMapSummary]
+MapName=KF-Rack'emUp
+1851079964
+[KF-Rack'emUpHell KFMapSummary]
+MapName=KF-Rack'emUpHell
+1851675776
+[KF-FacingWorlds-FallBack KFMapSummary]
+MapName=KF-FacingWorlds-FallBack
+1852454898
+[KF-GridLock KFMapSummary]
+MapName=KF-GridLock
+1852930981
+[KF-ParisBridgeWW2 KFMapSummary]
+MapName=KF-ParisBridgeWW2
+1856174697
+[KF-Stalker-Arena KFMapSummary]
+MapName=KF-Stalker-Arena
+1857442374
+[KF-Alicia_Madness_Returns_Arena_Endless_Mode KFMapSummary]
+MapName=KF-Alicia_Madness_Returns_Arena_Endless_Mode
+1860718872
+[KF-Uncaged KFMapSummary]
+MapName=KF-Uncaged
+1861419982
+[KF-Crash KFMapSummary]
+MapName=KF-Crash
+1867945378
+[KF-KameHouse_HaMe KFMapSummary]
+MapName=KF-KameHouse_HaMe
+1868278305
+[KF-KF1-Aperture KFMapSummary]
+MapName=KF-KF1-Aperture
+1869139209
+[KF-De_Dust_Camp KFMapSummary]
+MapName=KF-De_Dust_Camp
+1871585704
+[KF-Cross KFMapSummary]
+MapName=KF-Cross
+1871586831
+[KF-Ring KFMapSummary]
+MapName=KF-Ring
+1871989017
+[KF-Paradise_Isle KFMapSummary]
+MapName=KF-Paradise_Isle
+1872669980
+[KF-Deathtrench KFMapSummary]
+MapName=KF-Deathtrench
+1875962705
+[KF-Red KFMapSummary]
+MapName=KF-Red
+1878018663
+[KF-Embry_Square KFMapSummary]
+MapName=KF-Embry_Square
+1880125521
+[KF-ShootingGalleryV3NoGravity KFMapSummary]
+MapName=KF-ShootingGalleryV3NoGravity
+1886543703
+[KF-HarvestSeason KFMapSummary]
+MapName=KF-HarvestSeason
+1889736650
+[KF-Sunnyside KFMapSummary]
+MapName=KF-Sunnyside
+1891481261
+[KF-VirtualInsanity KFMapSummary]
+MapName=KF-VirtualInsanity
+1893143023
+[KF-Joker KFMapSummary]
+MapName=KF-Joker
+1893909535
+[KF-AdventBunkerDown KFMapSummary]
+MapName=KF-AdventBunkerDown
+1893918234
+[KF-Snow KFMapSummary]
+MapName=KF-Snow
+1897252663
+[KF-TheRiverside KFMapSummary]
+MapName=KF-TheRiverside
+1898855752
+[KF-SingleWayDefense KFMapSummary]
+MapName=KF-SingleWayDefense
+1899753399
+[KF-Extreme_PowerCore KFMapSummary]
+MapName=KF-Extreme_PowerCore
+1899792250
+[KF-Extreme_Spillway KFMapSummary]
+MapName=KF-Extreme_Spillway
+1900442800
+[KF-AshwoodAsylum_Redux KFMapSummary]
+MapName=KF-AshwoodAsylum_Redux
+1900749091
+[KF-Scavenger_Hunters KFMapSummary]
+MapName=KF-Scavenger_Hunters
+1901464679
+[KF-2way_v8 KFMapSummary]
+MapName=KF-2way_v8
+1901994477
+[KF-fysnow KFMapSummary]
+MapName=KF-fysnow
+1902712534
+[KF-BasicMap KFMapSummary]
+MapName=KF-BasicMap
+1904354370
+[KF-TheLastEffort KFMapSummary]
+MapName=KF-TheLastEffort
+1907372788
+[kf-playboy_inside_of_me_edition KFMapSummary]
+MapName=kf-playboy_inside_of_me_edition
+1910745663
+[KF-keng_1 KFMapSummary]
+MapName=KF-keng_1
+1913697289
+[KF-BankHeist KFMapSummary]
+MapName=KF-BankHeist
+1913744822
+[KF-Last_Refuge KFMapSummary]
+MapName=KF-Last_Refuge
+1914644583
+[KF-DenpaTower KFMapSummary]
+MapName=KF-DenpaTower
+1915059844
+[KF-Padoru KFMapSummary]
+MapName=KF-Padoru
+1915314236
+[KF-KF1-Devils-Dollhouse KFMapSummary]
+MapName=KF-KF1-Devils-Dollhouse
+1916696961
+[KF-KillZone_Wabbit_L3X8Edit KFMapSummary]
+MapName=KF-KillZone_Wabbit_L3X8Edit
+1921105764
+[KF-QuarantineBreach KFMapSummary]
+MapName=KF-QuarantineBreach
+1924690791
+[KF-Neon_Holdout KFMapSummary]
+MapName=KF-Neon_Holdout
+1926427848
+[KF-Crash_Night KFMapSummary]
+MapName=KF-Crash_Night
+1927109175
+[KF-Faroh KFMapSummary]
+MapName=KF-Faroh
+1929974892
+[KF-CanvilleChristmas_Night KFMapSummary]
+MapName=KF-CanvilleChristmas_Night
+1933805049
+[KF-BoathouseFinale KFMapSummary]
+MapName=KF-BoathouseFinale
+1936875049
+[KF-Matriarchs_Pyramide KFMapSummary]
+MapName=KF-Matriarchs_Pyramide
+1940643223
+[KF-SouthPark KFMapSummary]
+MapName=KF-SouthPark
+1944930594
+[KF-Distance_War_2 KFMapSummary]
+MapName=KF-Distance_War_2
+1947973391
+[KF-Upstairs KFMapSummary]
+MapName=KF-Upstairs
+1951512166
+[KF-Terminal034 KFMapSummary]
+MapName=KF-Terminal034
+1951655637
+[KF-PathfindersBasement2 KFMapSummary]
+MapName=KF-PathfindersBasement2
+1953392621
+[KF-SouthPark-Night KFMapSummary]
+MapName=KF-SouthPark-Night
+1954419897
+[KF-Treatment_Station KFMapSummary]
+MapName=KF-Treatment_Station
+1958198305
+[KF-PtDaFool_Killzone KFMapSummary]
+MapName=KF-PtDaFool_Killzone
+1959365374
+[KF-KillingPool12345 KFMapSummary]
+MapName=KF-KillingPool12345
+1962579787
+[KF-BigRoom_2020 KFMapSummary]
+MapName=KF-BigRoom_2020
+1962648121
+[KF-TF2_HighTower KFMapSummary]
+MapName=KF-TF2_HighTower
+1966920499
+[KF-SrdMap2Redux_Expanded KFMapSummary]
+MapName=KF-SrdMap2Redux_Expanded
+1968514375
+[KF-UFO-Invasion-southpark KFMapSummary]
+MapName=KF-UFO-Invasion-southpark
+1970113301
+[KF-Dark KFMapSummary]
+MapName=KF-Dark
+1970113390
+[KF-FortressDefense KFMapSummary]
+MapName=KF-FortressDefense
+1970113540
+[KF-HallwayOfDeathHard KFMapSummary]
+MapName=KF-HallwayOfDeathHard
+1970113651
+[KF-HouseDefense KFMapSummary]
+MapName=KF-HouseDefense
+1970113714
+[KF-House KFMapSummary]
+MapName=KF-House
+1970113767
+[KF-SrdNewMap KFMapSummary]
+MapName=KF-SrdNewMap
+1970113808
+[KF-Survive1 KFMapSummary]
+MapName=KF-Survive1
+1970113877
+[KF-TestMap2 KFMapSummary]
+MapName=KF-TestMap2
+1972021486
+[KF-SafeGuard KFMapSummary]
+MapName=KF-SafeGuard
+1972842972
+[KF-Fort KFMapSummary]
+MapName=KF-Fort
+1974181032
+[KF-SR_Hell KFMapSummary]
+MapName=KF-SR_Hell
+1974241876
+[KF-1way_v5 KFMapSummary]
+MapName=KF-1way_v5
+1984117992
+[KF-First KFMapSummary]
+MapName=KF-First
+1987388527
+[KF-AnimeDanceMore KFMapSummary]
+MapName=KF-AnimeDanceMore
+1991309338
+[KF-PK-OperaHouse KFMapSummary]
+MapName=KF-PK-OperaHouse
+1995389841
+[KF-AnimeDanceMoreOpaque KFMapSummary]
+MapName=KF-AnimeDanceMoreOpaque
+1996788481
+[KF-Jump_And_Run KFMapSummary]
+MapName=KF-Jump_And_Run
+1997022930
+[KF-HanDynasty KFMapSummary]
+MapName=KF-HanDynasty
+2001975294
+[KF-CandyLand KFMapSummary]
+MapName=KF-CandyLand
+2005026569
+[KF-Border_Wall KFMapSummary]
+MapName=KF-Border_Wall
+2005026569
+[KF-Border_Wall_Basic KFMapSummary]
+MapName=KF-Border_Wall_Basic
+2006421012
+[KF-CTF_Laboratory KFMapSummary]
+MapName=KF-CTF_Laboratory
+2007542887
+[KF-Hell_Cant_Wait KFMapSummary]
+MapName=KF-Hell_Cant_Wait
+2008146291
+[KF-voidstairs KFMapSummary]
+MapName=KF-voidstairs
+2009462799
+[KF-HorzineArena-B2 KFMapSummary]
+MapName=KF-HorzineArena-B2
+2010897222
+[KF-Blackland KFMapSummary]
+MapName=KF-Blackland
+2013829701
+[KF-The-Killing-Temple KFMapSummary]
+MapName=KF-The-Killing-Temple
+2016595833
+[KF-3_Lane_Defence KFMapSummary]
+MapName=KF-3_Lane_Defence
+2019427024
+[KF-BioticsLab2009-F1 KFMapSummary]
+MapName=KF-BioticsLab2009-F1
+2019676082
+[testingtrash KFMapSummary]
+MapName=testingtrash
+2023213607
+[KF-ContainmentStationD KFMapSummary]
+MapName=KF-ContainmentStationD
+2025400407
+[KF-Toxic_Cavern KFMapSummary]
+MapName=KF-Toxic_Cavern
+2025647978
+[KF-Real_Rose_McIver KFMapSummary]
+MapName=KF-Real_Rose_McIver
+2026459834
+[KF-Rose_McIver_Final KFMapSummary]
+MapName=KF-Rose_McIver_Final
+2028962773
+[KF-PK-Cathedral KFMapSummary]
+MapName=KF-PK-Cathedral
+2034902810
+[KF-Arendelle KFMapSummary]
+MapName=KF-Arendelle
+2036795550
+[KF-First_Map_Finished KFMapSummary]
+MapName=KF-First_Map_Finished
+2039488335
+[KF-IronCross KFMapSummary]
+MapName=KF-IronCross
+2040218217
+[KF-FerexTower KFMapSummary]
+MapName=KF-FerexTower
+2040475472
+[KF-BM-GonarchsLair KFMapSummary]
+MapName=KF-BM-GonarchsLair
+2045463529
+[KF-CTF_Canyon KFMapSummary]
+MapName=KF-CTF_Canyon
+2047911987
+[KF-PrisonFixed KFMapSummary]
+MapName=KF-PrisonFixed
+2049633879
+[KF-SpillwayFixed KFMapSummary]
+MapName=KF-SpillwayFixed
+2050618525
+[KF-LilaPanic KFMapSummary]
+MapName=KF-LilaPanic
+2050622525
+[KF-Defence KFMapSummary]
+MapName=KF-Defence
+2053281851
+[KF-TianJie KFMapSummary]
+MapName=KF-TianJie
+2053960246
+[KF-Remilly_Test_Map KFMapSummary]
+MapName=KF-Remilly_Test_Map
+2054449073
+[KF-Military-Base KFMapSummary]
+MapName=KF-Military-Base
+2055337846
+[KF-Weird KFMapSummary]
+MapName=KF-Weird
+2056268144
+[KF-Crazy_PlayboyChickenandbeer KFMapSummary]
+MapName=KF-Crazy_PlayboyChickenandbeer
+2060686554
+[KF-Blood_Covenant KFMapSummary]
+MapName=KF-Blood_Covenant
+2062628818
+[KF-Hell_Cant_Wait KFMapSummary]
+MapName=KF-Hell_Cant_Wait
+2062903265
+[KF-Random_Holdout KFMapSummary]
+MapName=KF-Random_Holdout
+2065716383
+[KF-Crazy_Playboy_Edited_PeruLimakf2 KFMapSummary]
+MapName=KF-Crazy_Playboy_Edited_PeruLimakf2
+2065829128
+[KF-TripwireOffice KFMapSummary]
+MapName=KF-TripwireOffice
+2068136418
+[KF-ResearchCenter KFMapSummary]
+MapName=KF-ResearchCenter
+2072665618
+[KF-Epic_BigRoom_2021 KFMapSummary]
+MapName=KF-Epic_BigRoom_2021
+2073985570
+[KF-Octagram KFMapSummary]
+MapName=KF-Octagram
+2076695116
+[KF-NoTimeToPrepare KFMapSummary]
+MapName=KF-NoTimeToPrepare
+2083271900
+[KF-CTF_Dust KFMapSummary]
+MapName=KF-CTF_Dust
+2084036857
+[KF-Gyro_NTTP KFMapSummary]
+MapName=KF-Gyro_NTTP
+2084036857
+[KF-Mansion_NTTP KFMapSummary]
+MapName=KF-Mansion_NTTP
+2084036857
+[KF-Patio_NTTP KFMapSummary]
+MapName=KF-Patio_NTTP
+2084036857
+[KF-TortureColumns KFMapSummary]
+MapName=KF-TortureColumns
+2088871265
+[ART_BurningParis KFMapSummary]
+MapName=ART_BurningParis
+2088871265
+[FX_BurningParis KFMapSummary]
+MapName=FX_BurningParis
+2088871265
+[LIGHTS_BurningParis KFMapSummary]
+MapName=LIGHTS_BurningParis
+2088871265
+[KF-BurningParisFixed KFMapSummary]
+MapName=KF-BurningParisFixed
+2089422473
+[KF-SnowForest KFMapSummary]
+MapName=KF-SnowForest
+2090347916
+[KF-ChickenandbeerTheSequel KFMapSummary]
+MapName=KF-ChickenandbeerTheSequel
+2091559050
+[KF-Gongaga KFMapSummary]
+MapName=KF-Gongaga
+2092028697
+[kf-backrooms KFMapSummary]
+MapName=kf-backrooms
+2093045765
+[KF-VIP_Box KFMapSummary]
+MapName=KF-VIP_Box
+2093894565
+[KF-Killzone_Station_0_54 KFMapSummary]
+MapName=KF-Killzone_Station_0_54
+2094668026
+[KF-XelasVoidLab KFMapSummary]
+MapName=KF-XelasVoidLab
+2095038898
+[kf-so_below KFMapSummary]
+MapName=kf-so_below
+2097446048
+[KF-Nightclub KFMapSummary]
+MapName=KF-Nightclub
+2097448460
+[KF-GiantCityRuins_Daytime KFMapSummary]
+MapName=KF-GiantCityRuins_Daytime
+2101692130
+[KF-GiantCityRuins_Original KFMapSummary]
+MapName=KF-GiantCityRuins_Original
+2104069818
+[KF-HowToBuildYourOwnKF2Map KFMapSummary]
+MapName=KF-HowToBuildYourOwnKF2Map
+2106485603
+[KF-VORTEX-Nuked KFMapSummary]
+MapName=KF-VORTEX-Nuked
+2108141748
+[KF-BoxWithoutHope-DocsFixes KFMapSummary]
+MapName=KF-BoxWithoutHope-DocsFixes
+2112483863
+[KF-DarkHorror KFMapSummary]
+MapName=KF-DarkHorror
+2112484462
+[KF-Sanitarium-classic KFMapSummary]
+MapName=KF-Sanitarium-classic
+2115878820
+[KF-PK-Forbidden KFMapSummary]
+MapName=KF-PK-Forbidden
+2124143947
+[KF-Painkiller-Descent KFMapSummary]
+MapName=KF-Painkiller-Descent
+2124503174
+[KF-NoTimeToPrepareBonus KFMapSummary]
+MapName=KF-NoTimeToPrepareBonus
+2126482211
+[KF-Brennenburg KFMapSummary]
+MapName=KF-Brennenburg
+2126515769
+[KF-CityFort KFMapSummary]
+MapName=KF-CityFort
+2132617874
+[KF-Countdown_Test KFMapSummary]
+MapName=KF-Countdown_Test
+2135923402
+[kf-killingpool_6p KFMapSummary]
+MapName=kf-killingpool_6p
+2138887088
+[KF-Old_West-mwl KFMapSummary]
+MapName=KF-Old_West-mwl
+2139957532
+[KF-Farmhouse-ZM KFMapSummary]
+MapName=KF-Farmhouse-ZM
+2140055971
+[KF-DistrictOne_Day_ZR KFMapSummary]
+MapName=KF-DistrictOne_Day_ZR
+2140638705
+[KF-Hells_Reach KFMapSummary]
+MapName=KF-Hells_Reach
+2141184163
+[KF-Arena_Or_Something_V3 KFMapSummary]
+MapName=KF-Arena_Or_Something_V3
+2142674703
+[KF-The_Dark_Tower KFMapSummary]
+MapName=KF-The_Dark_Tower
+2145742592
+[KF-Halo1BloodGulch KFMapSummary]
+MapName=KF-Halo1BloodGulch
+2146789647
+[KF-PK-OrientalCastle KFMapSummary]
+MapName=KF-PK-OrientalCastle
+2147909081
+[KF-HeavensGate-mwl KFMapSummary]
+MapName=KF-HeavensGate-mwl
+2152219297
+[KF-Cross_T_5p KFMapSummary]
+MapName=KF-Cross_T_5p
+2153398548
+[KF-Down KFMapSummary]
+MapName=KF-Down
+2153998528
+[KF-Kino_Der_Toten KFMapSummary]
+MapName=KF-Kino_Der_Toten
+2164044964
+[KF-RockySwamp KFMapSummary]
+MapName=KF-RockySwamp
+2166751621
+[KF-NachtDerUntoten-ZM KFMapSummary]
+MapName=KF-NachtDerUntoten-ZM
+2173882123
+[KF-Atrium KFMapSummary]
+MapName=KF-Atrium
+2175561804
+[KF-Cube2018_V2 KFMapSummary]
+MapName=KF-Cube2018_V2
+2176099472
+[KF-6_lanes_P KFMapSummary]
+MapName=KF-6_lanes_P
+2177863864
+[KF-ShrekSwamp KFMapSummary]
+MapName=KF-ShrekSwamp
+2178198796
+[KF-Random_Holdout_CD KFMapSummary]
+MapName=KF-Random_Holdout_CD
+2178634189
+[KF-Bus_Depot KFMapSummary]
+MapName=KF-Bus_Depot
+2188272180
+[KF-HellsCryptV2_cd+ KFMapSummary]
+MapName=KF-HellsCryptV2_cd+
+2188838861
+[KF-Oof KFMapSummary]
+MapName=KF-Oof
+2190273074
+[KF-Halloween-Farm KFMapSummary]
+MapName=KF-Halloween-Farm
+2196709063
+[kf-james KFMapSummary]
+MapName=kf-james
+2196764132
+[KF-horzinarena-insane KFMapSummary]
+MapName=KF-horzinarena-insane
+2201521966
+[kf-3psolo KFMapSummary]
+MapName=kf-3psolo
+2201524457
+[kf-3psolov2 KFMapSummary]
+MapName=kf-3psolov2
+2201951459
+[kf-3psolov2night-A1 KFMapSummary]
+MapName=kf-3psolov2night-A1
+2202088640
+[KF-BigRoom_2020insane KFMapSummary]
+MapName=KF-BigRoom_2020insane
+2203076858
+[KF-jamesboy_insane KFMapSummary]
+MapName=KF-jamesboy_insane
+2203077334
+[KF-jamesboy KFMapSummary]
+MapName=KF-jamesboy
+2203982474
+[KF-Floating_Island KFMapSummary]
+MapName=KF-Floating_Island
+2205050869
+[kf-3saolo-edited KFMapSummary]
+MapName=kf-3saolo-edited
+2206657414
+[kf-ForestRuinsv1 KFMapSummary]
+MapName=kf-ForestRuinsv1
+2208316737
+[KF-Laboratory KFMapSummary]
+MapName=KF-Laboratory
+2208971535
+[KF-KF2_Kart KFMapSummary]
+MapName=KF-KF2_Kart
+2210944629
+[kf-Ruinsv1-james KFMapSummary]
+MapName=kf-Ruinsv1-james
+2212773495
+[kf-2pv1 KFMapSummary]
+MapName=kf-2pv1
+2212773495
+[kf-2pv1 KFMapSummary]
+MapName=kf-2pv1
+2216932429
+[KF-TimeSplittersRestaurant KFMapSummary]
+MapName=KF-TimeSplittersRestaurant
+2218141080
+[KF-Highschool KFMapSummary]
+MapName=KF-Highschool
+2218425746
+[KF-Hells_ReachV2 KFMapSummary]
+MapName=KF-Hells_ReachV2
+2218687749
+[BoxedIn KFMapSummary]
+MapName=BoxedIn
+2220971302
+[KF-SchoolPVP KFMapSummary]
+MapName=KF-SchoolPVP
+2222630586
+[KF-SirensBelch KFMapSummary]
+MapName=KF-SirensBelch
+2222942026
+[kf-CUBE-NEW2020 KFMapSummary]
+MapName=kf-CUBE-NEW2020
+2225468063
+[KF-ZedField-Fixed KFMapSummary]
+MapName=KF-ZedField-Fixed
+2225475762
+[KF-2Way-Fixed KFMapSummary]
+MapName=KF-2Way-Fixed
+2225475939
+[KF-4Way KFMapSummary]
+MapName=KF-4Way
+2225476046
+[KF-DooM2-Fixed KFMapSummary]
+MapName=KF-DooM2-Fixed
+2225476740
+[KF-KillingPool-Fixed KFMapSummary]
+MapName=KF-KillingPool-Fixed
+2225477029
+[KF-KillZone-Fixed KFMapSummary]
+MapName=KF-KillZone-Fixed
+2225477185
+[KF-Kusomiso_Floor-Fixed KFMapSummary]
+MapName=KF-Kusomiso_Floor-Fixed
+2225477334
+[KF-Lava_Castle-Fixed KFMapSummary]
+MapName=KF-Lava_Castle-Fixed
+2225477557
+[KF-Scar KFMapSummary]
+MapName=KF-Scar
+2225477690
+[KF-Stalker-Hospital-Fixed KFMapSummary]
+MapName=KF-Stalker-Hospital-Fixed
+2225478333
+[KF-Stalker-LabX16-Fixed KFMapSummary]
+MapName=KF-Stalker-LabX16-Fixed
+2225479048
+[KF-TheGardenV6-fixed KFMapSummary]
+MapName=KF-TheGardenV6-fixed
+2225479158
+[KF-TreeHouse-Fixed KFMapSummary]
+MapName=KF-TreeHouse-Fixed
+2225479282
+[KF-UNKO-Fixed KFMapSummary]
+MapName=KF-UNKO-Fixed
+2225479791
+[KF-vnn_mall-Fixed KFMapSummary]
+MapName=KF-vnn_mall-Fixed
+2230644494
+[KF-RP2way-Fixed KFMapSummary]
+MapName=KF-RP2way-Fixed
+2231935941
+[KF-ROOMV1 KFMapSummary]
+MapName=KF-ROOMV1
+2233542304
+[KF-Monochrome KFMapSummary]
+MapName=KF-Monochrome
+2237335623
+[KF-Nightfall KFMapSummary]
+MapName=KF-Nightfall
+2238220927
+[KF-4pv1 KFMapSummary]
+MapName=KF-4pv1
+2241814670
+[KF-SteamComplex KFMapSummary]
+MapName=KF-SteamComplex
+2242569302
+[KF-Farmhouse2 KFMapSummary]
+MapName=KF-Farmhouse2
+2243039427
+[KF-The_Park KFMapSummary]
+MapName=KF-The_Park
+2243826430
+[KF-DarkSouls1UndeadBurg KFMapSummary]
+MapName=KF-DarkSouls1UndeadBurg
+2243860242
+[KF-The_Wars KFMapSummary]
+MapName=KF-The_Wars
+2244366346
+[KF-SednaHydron_V3 KFMapSummary]
+MapName=KF-SednaHydron_V3
+2247658747
+[KF-SomeTestMap_v2 KFMapSummary]
+MapName=KF-SomeTestMap_v2
+2255398317
+[KF-Arachnid KFMapSummary]
+MapName=KF-Arachnid
+2255398317
+[KF-spidertest KFMapSummary]
+MapName=KF-spidertest
+2261089746
+[KF-CoD-Harbor KFMapSummary]
+MapName=KF-CoD-Harbor
+2261700057
+[KF-ZombieHighSchool KFMapSummary]
+MapName=KF-ZombieHighSchool
+2265300196
+[KF-Anxiety KFMapSummary]
+MapName=KF-Anxiety
+2267561023
+[KF-AmongUs-Skeld KFMapSummary]
+MapName=KF-AmongUs-Skeld
+2275496897
+[KF-Evac-Subway KFMapSummary]
+MapName=KF-Evac-Subway
+2283437952
+[KF-The-Killing-Temple-Night KFMapSummary]
+MapName=KF-The-Killing-Temple-Night
+2296259701
+[KF-ErodedMansion KFMapSummary]
+MapName=KF-ErodedMansion
+2297111235
+[KF-SuperPerkTrainingDeluxe-v8 KFMapSummary]
+MapName=KF-SuperPerkTrainingDeluxe-v8
+2297356238
+[KF-NO_HOPE KFMapSummary]
+MapName=KF-NO_HOPE
+2299696556
+[KF-ThePush KFMapSummary]
+MapName=KF-ThePush
+2304739485
+[KF-Horzine-MilitaryBase-Xmas KFMapSummary]
+MapName=KF-Horzine-MilitaryBase-Xmas
+2305407578
+[KF-SwampDefenceRemake KFMapSummary]
+MapName=KF-SwampDefenceRemake
+2310563576
+[KF-GunslingerWarmUp KFMapSummary]
+MapName=KF-GunslingerWarmUp
+2311654299
+[KF-DOJO2 KFMapSummary]
+MapName=KF-DOJO2
+2314452079
+[KF-The_Tomb KFMapSummary]
+MapName=KF-The_Tomb
+2319518764
+[KF-IceCave KFMapSummary]
+MapName=KF-IceCave
+2319676949
+[KF-EKB_Cube_V1_Classic KFMapSummary]
+MapName=KF-EKB_Cube_V1_Classic
+2321549166
+[KF-SZZEX KFMapSummary]
+MapName=KF-SZZEX
+2323443365
+[KF-Hellspire KFMapSummary]
+MapName=KF-Hellspire
+2324796025
+[KF-DivisionDefense KFMapSummary]
+MapName=KF-DivisionDefense
+2327190169
+[KF-EvacuationPoint_Korea KFMapSummary]
+MapName=KF-EvacuationPoint_Korea
+2329494279
+[KF-NightAfterThePush KFMapSummary]
+MapName=KF-NightAfterThePush
+2330002006
+[KF-HL_Crossfire_DM KFMapSummary]
+MapName=KF-HL_Crossfire_DM
+2330248048
+[KF-Defeat KFMapSummary]
+MapName=KF-Defeat
+2334493046
+[KF-LostSocietyNewWorld KFMapSummary]
+MapName=KF-LostSocietyNewWorld
+2338484587
+[KF-HL_Stalkyard_DM KFMapSummary]
+MapName=KF-HL_Stalkyard_DM
+2339884824
+[KF-Spacechaos_2020 KFMapSummary]
+MapName=KF-Spacechaos_2020
+2341612508
+[KF-KillZone_TheOctagon KFMapSummary]
+MapName=KF-KillZone_TheOctagon
+2343073707
+[KF-KillTheScrake KFMapSummary]
+MapName=KF-KillTheScrake
+2349914967
+[KF-Shooting_Range KFMapSummary]
+MapName=KF-Shooting_Range
+2350314674
+[KF-SZZEX_DoubleWall KFMapSummary]
+MapName=KF-SZZEX_DoubleWall
+2353624698
+[KF-MetroSwamps KFMapSummary]
+MapName=KF-MetroSwamps
+2356822060
+[KF-MinecraftMap KFMapSummary]
+MapName=KF-MinecraftMap
+2358111159
+[KF-Ring KFMapSummary]
+MapName=KF-Ring
+2358497033
+[KF-Salvage KFMapSummary]
+MapName=KF-Salvage
+2359562656
+[KF-Nightmare_Island KFMapSummary]
+MapName=KF-Nightmare_Island
+2362765810
+[KF-Stalker-TruckCemetery KFMapSummary]
+MapName=KF-Stalker-TruckCemetery
+2368234261
+[KF-HellmarkStation_Redux KFMapSummary]
+MapName=KF-HellmarkStation_Redux
+2370507922
+[KF-Rust KFMapSummary]
+MapName=KF-Rust
+2371225442
+[KF-T2RTestMap KFMapSummary]
+MapName=KF-T2RTestMap
+2375849002
+[KF-Roof11-classic-1-side KFMapSummary]
+MapName=KF-Roof11-classic-1-side
+2379854091
+[KF-SharpShooting KFMapSummary]
+MapName=KF-SharpShooting
+2380526453
+[KF-SlaughterHall KFMapSummary]
+MapName=KF-SlaughterHall
+2384536318
+[KF-Chivalry-Colosseum KFMapSummary]
+MapName=KF-Chivalry-Colosseum
+2384780098
+[KF-Yaevillage KFMapSummary]
+MapName=KF-Yaevillage
+2385058746
+[KF-TeamworkChallenge_1 KFMapSummary]
+MapName=KF-TeamworkChallenge_1
+2385752765
+[KF-TeamworkChallenge_2 KFMapSummary]
+MapName=KF-TeamworkChallenge_2
+2390309522
+[KF-Ladry KFMapSummary]
+MapName=KF-Ladry
+2397734590
+[KF-Block_World KFMapSummary]
+MapName=KF-Block_World
+2397845614
+[KF-KillingPool_vDF KFMapSummary]
+MapName=KF-KillingPool_vDF
+2399032567
+[KF-Run_2077 KFMapSummary]
+MapName=KF-Run_2077
+2399661808
+[KF-MagicTower KFMapSummary]
+MapName=KF-MagicTower
+2400407294
+[KF-DeltaLab KFMapSummary]
+MapName=KF-DeltaLab
+2401503771
+[KF-Dynamic_Arena KFMapSummary]
+MapName=KF-Dynamic_Arena
+2406281889
+[KF-PapaFryHoldout KFMapSummary]
+MapName=KF-PapaFryHoldout
+2407999279
+[KF-SZZEX_Endless KFMapSummary]
+MapName=KF-SZZEX_Endless
+2410077407
+[KF-Solace KFMapSummary]
+MapName=KF-Solace
+2411452506
+[KF-BioticsCorridor KFMapSummary]
+MapName=KF-BioticsCorridor
+2411452506
+[KF-SnowyCorridor KFMapSummary]
+MapName=KF-SnowyCorridor
+2411452506
+[KF-SnowyCorridorAmmo KFMapSummary]
+MapName=KF-SnowyCorridorAmmo
+2415010098
+[KF-CTF_Space KFMapSummary]
+MapName=KF-CTF_Space
+2415475669
+[KF-Aluminiumlabyrinth KFMapSummary]
+MapName=KF-Aluminiumlabyrinth
+2418602841
+[KF-Laser_Room KFMapSummary]
+MapName=KF-Laser_Room
+2419247464
+[KF-Laser_Room_Hardcore KFMapSummary]
+MapName=KF-Laser_Room_Hardcore
+2419637251
+[KF-BiuBiuBiu_BigRoom_2021 KFMapSummary]
+MapName=KF-BiuBiuBiu_BigRoom_2021
+2419772952
+[KF-PK-Cemetery KFMapSummary]
+MapName=KF-PK-Cemetery
+2420292084
+[KF-DropTheZeds KFMapSummary]
+MapName=KF-DropTheZeds
+2421158134
+[KF-DamageLockdown KFMapSummary]
+MapName=KF-DamageLockdown
+2428633684
+[KF-TrainingRow KFMapSummary]
+MapName=KF-TrainingRow
+2430641458
+[KF-TreeHouse-RPG KFMapSummary]
+MapName=KF-TreeHouse-RPG
+2430713580
+[KF-Wolf-3D KFMapSummary]
+MapName=KF-Wolf-3D
+2430725062
+[KF-DooM_2_MAP01 KFMapSummary]
+MapName=KF-DooM_2_MAP01
+2430744339
+[KF-Dead_Bridge_WorldTrader_NoFog KFMapSummary]
+MapName=KF-Dead_Bridge_WorldTrader_NoFog
+2430780511
+[KF-Summit KFMapSummary]
+MapName=KF-Summit
+2430792839
+[KF-vava KFMapSummary]
+MapName=KF-vava
+2430801285
+[KF-pd2Cook KFMapSummary]
+MapName=KF-pd2Cook
+2433549222
+[KF-Payday2_Alaskan_Deal KFMapSummary]
+MapName=KF-Payday2_Alaskan_Deal
+2434994910
+[KF-Hans KFMapSummary]
+MapName=KF-Hans
+2434994910
+[KF-KFP KFMapSummary]
+MapName=KF-KFP
+2435452526
+[KF-LegoArena KFMapSummary]
+MapName=KF-LegoArena
+2440650479
+[KF-Random_Holdout_Challenge KFMapSummary]
+MapName=KF-Random_Holdout_Challenge
+2440804813
+[KF-TheLastStand_1LaneWork1 KFMapSummary]
+MapName=KF-TheLastStand_1LaneWork1
+2440823647
+[KF-KillingPool_No_Pickup_Item KFMapSummary]
+MapName=KF-KillingPool_No_Pickup_Item
+2441455735
+[KF-Killbox_v114514 KFMapSummary]
+MapName=KF-Killbox_v114514
+2442297663
+[KF-HorzineMoonFactory-V3 KFMapSummary]
+MapName=KF-HorzineMoonFactory-V3
+2442303588
+[KF-De_Dust KFMapSummary]
+MapName=KF-De_Dust
+2442312050
+[KF-CS_Militia KFMapSummary]
+MapName=KF-CS_Militia
+2442314394
+[KF-Leviathan-Squidloaf-Edition KFMapSummary]
+MapName=KF-Leviathan-Squidloaf-Edition
+2442325202
+[KF-DeepingWall KFMapSummary]
+MapName=KF-DeepingWall
+2445753551
+[KF-Settlers KFMapSummary]
+MapName=KF-Settlers
+2446191727
+[KF-L4D2-Plantation KFMapSummary]
+MapName=KF-L4D2-Plantation
+2448050874
+[KF-sovietKittyHellArena KFMapSummary]
+MapName=KF-sovietKittyHellArena
+2450123880
+[KF-AtypicalLinearity KFMapSummary]
+MapName=KF-AtypicalLinearity
+2457257064
+[KF-Meow_Aftermath KFMapSummary]
+MapName=KF-Meow_Aftermath
+2462027563
+[KF-Zombotron_Ammo_NoPickup KFMapSummary]
+MapName=KF-Zombotron_Ammo_NoPickup
+2462757770
+[KF-OutpostCorner KFMapSummary]
+MapName=KF-OutpostCorner
+2462896056
+[kf-Construct_ammo KFMapSummary]
+MapName=kf-Construct_ammo
+2463167013
+[KF-Samurai-Spirits KFMapSummary]
+MapName=KF-Samurai-Spirits
+2463499673
+[KF-MarioCastleArena KFMapSummary]
+MapName=KF-MarioCastleArena
+2463756409
+[KF-Monochrome_Ammo KFMapSummary]
+MapName=KF-Monochrome_Ammo
+2464478944
+[KF-Grid KFMapSummary]
+MapName=KF-Grid
+2464587619
+[KF-Cubicle KFMapSummary]
+MapName=KF-Cubicle
+2466333655
+[KF-SpiralSlaughter-numbers KFMapSummary]
+MapName=KF-SpiralSlaughter-numbers
+2466341270
+[KF-Verticality_AMMOEDITED KFMapSummary]
+MapName=KF-Verticality_AMMOEDITED
+2466698337
+[KF-HC_Cuboid_Extra KFMapSummary]
+MapName=KF-HC_Cuboid_Extra
+2467425810
+[KF-LightArena-GlassNGrass KFMapSummary]
+MapName=KF-LightArena-GlassNGrass
+2468756478
+[KF-Soviet_kitty_Hell_Cant_Wait KFMapSummary]
+MapName=KF-Soviet_kitty_Hell_Cant_Wait
+2470762275
+[KF-FBC KFMapSummary]
+MapName=KF-FBC
+2474976812
+[KF-MegaBiotics_v1 KFMapSummary]
+MapName=KF-MegaBiotics_v1
+2478039397
+[KF-MegaBiotics_v2 KFMapSummary]
+MapName=KF-MegaBiotics_v2
+2479180599
+[KF-Sahara-AMMOEDITED KFMapSummary]
+MapName=KF-Sahara-AMMOEDITED
+2480126058
+[KF-KF1_West_London_Night KFMapSummary]
+MapName=KF-KF1_West_London_Night
+2480150533
+[KF-Experiment KFMapSummary]
+MapName=KF-Experiment
+2481606221
+[KF-BlockFort-Remastered KFMapSummary]
+MapName=KF-BlockFort-Remastered
+2482781425
+[KF-Dead_Bridge_WorldTrader_NoFog-AMMOEDIT KFMapSummary]
+MapName=KF-Dead_Bridge_WorldTrader_NoFog-AMMOEDIT
+2482931723
+[KF-Stalker-Limansk-worldtrader-moreammo KFMapSummary]
+MapName=KF-Stalker-Limansk-worldtrader-moreammo
+2483057066
+[KF-finlandwinterland-AMMOEDIT KFMapSummary]
+MapName=KF-finlandwinterland-AMMOEDIT
+2486135701
+[KF-Stalker-LabX16 KFMapSummary]
+MapName=KF-Stalker-LabX16
+2486325637
+[KF-Zeds_At_Sea KFMapSummary]
+MapName=KF-Zeds_At_Sea
+2486363851
+[KF-KnifeToMeetYou KFMapSummary]
+MapName=KF-KnifeToMeetYou
+2487288935
+[KF-No-Escape-Nightmare KFMapSummary]
+MapName=KF-No-Escape-Nightmare
+2490369097
+[KF-Zeds_At_Sea_Storm KFMapSummary]
+MapName=KF-Zeds_At_Sea_Storm
+2490633845
+[KF-dadonfloor KFMapSummary]
+MapName=KF-dadonfloor
+642421282
+[KF-IceArena KFMapSummary]
+MapName=KF-IceArena
+642437554
+[KF-OilRigSubstation-v2 KFMapSummary]
+MapName=KF-OilRigSubstation-v2
+642519803
+[KF-NewCubeRemakeFinalV1 KFMapSummary]
+MapName=KF-NewCubeRemakeFinalV1
+642526083
+[KF-Checkpoint KFMapSummary]
+MapName=KF-Checkpoint
+642580986
+[KF-NewDeathBasin KFMapSummary]
+MapName=KF-NewDeathBasin
+642652221
+[KF-MawOfMadness_v2 KFMapSummary]
+MapName=KF-MawOfMadness_v2
+642694644
+[KF-BioticsLab_Enhanced KFMapSummary]
+MapName=KF-BioticsLab_Enhanced
+642932553
+[KF-N64Complex-V3 KFMapSummary]
+MapName=KF-N64Complex-V3
+643269874
+[KF-HotelZed KFMapSummary]
+MapName=KF-HotelZed
+643292527
+[KF-ZedHarvest KFMapSummary]
+MapName=KF-ZedHarvest
+643308639
+[KF-Abyss KFMapSummary]
+MapName=KF-Abyss
+643364848
+[KF-PollutionFactory KFMapSummary]
+MapName=KF-PollutionFactory
+643383080
+[KF-BikiniAtoll KFMapSummary]
+MapName=KF-BikiniAtoll
+643424289
+[KF-TheDuke KFMapSummary]
+MapName=KF-TheDuke
+643517302
+[KF-DarkZone KFMapSummary]
+MapName=KF-DarkZone
+643840752
+[KF-HorzineExpress KFMapSummary]
+MapName=KF-HorzineExpress
+644230614
+[KF-TaintedGrove KFMapSummary]
+MapName=KF-TaintedGrove
+644237239
+[KF-Caged KFMapSummary]
+MapName=KF-Caged
+645048540
+[KF-The_Lions_Head_v1 KFMapSummary]
+MapName=KF-The_Lions_Head_v1
+645143066
+[KF-Slaughterhouse-v2-2 KFMapSummary]
+MapName=KF-Slaughterhouse-v2-2
+645410401
+[KF-N64_Mario KFMapSummary]
+MapName=KF-N64_Mario
+646131633
+[KF-GreenStreet KFMapSummary]
+MapName=KF-GreenStreet
+646654523
+[KF-Fog_Rig_CONTEST KFMapSummary]
+MapName=KF-Fog_Rig_CONTEST
+646996463
+[KF-SantasHouse KFMapSummary]
+MapName=KF-SantasHouse
+647188240
+[KF-DeathCaveA5 KFMapSummary]
+MapName=KF-DeathCaveA5
+651985126
+[KF-Insurrection KFMapSummary]
+MapName=KF-Insurrection
+652058206
+[KF-DeathSentenceFinal KFMapSummary]
+MapName=KF-DeathSentenceFinal
+652710100
+[KF-GrooveYard KFMapSummary]
+MapName=KF-GrooveYard
+665565094
+[KF-Cucumber KFMapSummary]
+MapName=KF-Cucumber
+673280760
+[KF-Komplex KFMapSummary]
+MapName=KF-Komplex
+677201858
+[KF-LetsTryGas_03 KFMapSummary]
+MapName=KF-LetsTryGas_03
+682290186
+[KF-KF1_Manor KFMapSummary]
+MapName=KF-KF1_Manor
+716996189
+[KF-Cardonal KFMapSummary]
+MapName=KF-Cardonal
+733191110
+[KF-KF1_West_London KFMapSummary]
+MapName=KF-KF1_West_London
+745087924
+[KF-stage KFMapSummary]
+MapName=KF-stage
+747826742
+[KF-Asgard KFMapSummary]
+MapName=KF-Asgard
+761183700
+[KF-PyramidDefense KFMapSummary]
+MapName=KF-PyramidDefense
+764713736
+[KF-CityBlockade KFMapSummary]
+MapName=KF-CityBlockade
+767211397
+[KF-Beach_Invasion KFMapSummary]
+MapName=KF-Beach_Invasion
+770316991
+[KF-Dive_to_the_Heart KFMapSummary]
+MapName=KF-Dive_to_the_Heart
+772927125
+[KF-Entryway KFMapSummary]
+MapName=KF-Entryway
+775143885
+[KF-YetAnotherZombieDefense KFMapSummary]
+MapName=KF-YetAnotherZombieDefense
+785275912
+[KF-ChillwindPlateau KFMapSummary]
+MapName=KF-ChillwindPlateau
+803559396
+[KF-Cell_Alpha KFMapSummary]
+MapName=KF-Cell_Alpha
+809848323
+[KF-IceBound KFMapSummary]
+MapName=KF-IceBound
+810350239
+[KF-Cliffside KFMapSummary]
+MapName=KF-Cliffside
+818212145
+[KF-Transient KFMapSummary]
+MapName=KF-Transient
+820046643
+[KF-Offices KFMapSummary]
+MapName=KF-Offices
+822069082
+[KF-Netherhold KFMapSummary]
+MapName=KF-Netherhold
+824698748
+[KF-WinterFarm KFMapSummary]
+MapName=KF-WinterFarm
+828888529
+[KF-KillZone KFMapSummary]
+MapName=KF-KillZone
+832496937
+[KF-Emergence KFMapSummary]
+MapName=KF-Emergence
+840419962
+[KF-Splinter KFMapSummary]
+MapName=KF-Splinter
+840754106
+[KF-Mario_64_Remastered KFMapSummary]
+MapName=KF-Mario_64_Remastered
+843462650
+[KF-HuskDodgeBall KFMapSummary]
+MapName=KF-HuskDodgeBall
+851455817
+[KF-Biohazard KFMapSummary]
+MapName=KF-Biohazard
+852063507
+[KF-Cliffside_300mode KFMapSummary]
+MapName=KF-Cliffside_300mode
+855832583
+[KF-Mini_Green KFMapSummary]
+MapName=KF-Mini_Green
+858927807
+[KF-GrooveYard_XMAS KFMapSummary]
+MapName=KF-GrooveYard_XMAS
+859604133
+[KF-Outpost_NHSfix KFMapSummary]
+MapName=KF-Outpost_NHSfix
+859997535
+[KF-CarillonHamletB1 KFMapSummary]
+MapName=KF-CarillonHamletB1
+860324679
+[KF-GrooveYard_HALLOWEEN KFMapSummary]
+MapName=KF-GrooveYard_HALLOWEEN
+872561694
+[KF-AlpineVillage KFMapSummary]
+MapName=KF-AlpineVillage
+883662363
+[KF-SpiralSlaughter KFMapSummary]
+MapName=KF-SpiralSlaughter
+889441862
+[KF-Homestead KFMapSummary]
+MapName=KF-Homestead
+891319214
+[KF-China_Temple_Insane_Edit KFMapSummary]
+MapName=KF-China_Temple_Insane_Edit
+900540985
+[KF-KF1_Foundry KFMapSummary]
+MapName=KF-KF1_Foundry
+904881341
+[KF-DD-TowerSiege KFMapSummary]
+MapName=KF-DD-TowerSiege
+938656068
+[KF-ClubTux KFMapSummary]
+MapName=KF-ClubTux
+950682483
+[KF-PEREHRESTYA KFMapSummary]
+MapName=KF-PEREHRESTYA
