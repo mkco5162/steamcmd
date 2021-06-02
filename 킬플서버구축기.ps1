@@ -3,7 +3,7 @@
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
     Write-Host "##########  킬링플로어2 서버 자동구축기      ##########" -Foregroundcolor "Green"
-    Write-Host "##########  version : 1.0.3                  ##########" -Foregroundcolor "Green"
+    Write-Host "##########  version : 1.0.4                  ##########" -Foregroundcolor "Green"
     Write-Host "##########  창작마당 DB Update : 2021.05.20  ##########" -Foregroundcolor "Green"
     Write-Host "##########  Make By. ㅇㅇ(1.239)             ##########" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
@@ -38,6 +38,9 @@
         '2' {
             cls
             Write-Host "2. Config 재설정 (포트포워딩 미포함)" -Foregroundcolor "Green"
+            Write-Host "킬링플로어 서버가 설치된 폴더를 선택해 주십시오" -Foregroundcolor "Green"
+            $install = Find-Folders
+            $steamcmd = $install + "\cmd"
             Config_setting
         }
         '3' {
