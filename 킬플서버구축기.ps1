@@ -3,7 +3,7 @@
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
     Write-Host "##########  킬링플로어2 서버 자동구축기      ##########" -Foregroundcolor "Green"
-    Write-Host "##########  version : 1.0.5                  ##########" -Foregroundcolor "Green"
+    Write-Host "##########  version : 1.0.6                  ##########" -Foregroundcolor "Green"
     Write-Host "##########  창작마당 DB Update : 2021.05.20  ##########" -Foregroundcolor "Green"
     Write-Host "##########  Make By. ㅇㅇ(1.239)             ##########" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
@@ -42,6 +42,7 @@
             $install = Find-Folders
             $steamcmd = $install + "\cmd"
             Config_setting
+            Install_done
         }
         '3' {
             cls
