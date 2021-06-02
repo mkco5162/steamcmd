@@ -37,11 +37,12 @@
         }
         '2' {
             cls
-            Write-Host "2. Config 재설정 (포트포워딩 미포함)" -Foregroundcolor "Green"
+            Write-Host "2. Config 재설정 (Config 설정, 커스텀맵 추가, 서버 실행기 재설정)" -Foregroundcolor "Green"
             Write-Host "킬링플로어 서버가 설치된 폴더를 선택해 주십시오" -Foregroundcolor "Green"
             $install = Find-Folders
             $steamcmd = $install + "\cmd"
             Config_setting
+	    add_custom_maps
             Install_done
         }
         '3' {
