@@ -6,7 +6,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.2.2                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.2.3                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2021.05.20  " -Foregroundcolor "Red" -NoNewline
@@ -28,7 +28,7 @@
     Write-Host "2. Config 재설정 (Config 설정, 커스텀맵 추가, 서버 실행기 재설정)"
     Write-Host "3. 포트포워딩 (uPNP)"
     Write-Host "4. 다중서버 생성"
-    Write-Host "5. 프로그램 종료"
+    Write-Host "5. 프로그램 종"
     Write-Host ""
     Write-Host "만일 서버오류로 인해 재설정이 필요 할 경우 config 폴더 삭제 후 재설치를 권장합니다"
     Write-Host ""
@@ -63,12 +63,11 @@
             Clear-Host
             Write-Host "4. 다중서버 생성" -Foregroundcolor "Green"
             make_multi_server
-
         }
         '5' {
             Clear-Host
             Write-Host "5. 프로그램 종료" -Foregroundcolor "Green"
-            exit
+            exit료
         }
         default {
             Clear-Host
@@ -77,6 +76,7 @@
         }
     }
  }
+
 
  function Check_Java_Installed {
     $check_java_install = & cmd /c "java -version 2>&1"
@@ -99,6 +99,7 @@
         }
      }
  }
+
  function Install_close {
     Write-Host "답이 틀렸습니다. 설치를 종료하고 자바 다운로드 페이지로 연결합니다." -Foregroundcolor "Green"
     Read-Host "엔터를 눌러 자바11 다운로드 페이지로 연결합니다" -Foregroundcolor "Green"
