@@ -3,7 +3,7 @@
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
     Write-Host "##########  킬링플로어2 서버 자동구축기      ##########" -Foregroundcolor "Green"
-    Write-Host "##########  version : 1.0.4                  ##########" -Foregroundcolor "Green"
+    Write-Host "##########  version : 1.0.5                  ##########" -Foregroundcolor "Green"
     Write-Host "##########  창작마당 DB Update : 2021.05.20  ##########" -Foregroundcolor "Green"
     Write-Host "##########  Make By. ㅇㅇ(1.239)             ##########" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
@@ -261,6 +261,33 @@ Stop-Process -Name "kfserver"
  }
 
  function Config_setting {
+    Write-Host "게임 포트 : 서버 접속시 이용하는 포트 (기본값 : 7777)" -Foregroundcolor "Green"
+$server_gameport = Read-Host "게임 포트 입력 "
+Write-Host ""
+if (0 -eq $server_gameport)
+{
+    Write-Host "게임포트가 0 입니다. 기본값인 7777로 지정합니다" -Foregroundcolor "Green"
+    $server_gameport = 7777
+}
+Write-Host ""
+Write-Host "쿼리 포트 : 스팀과 통신하는데 사용하는 포트 (기본값 : 27015)" -Foregroundcolor "Green"
+$server_queryport = Read-Host "쿼리 포트 입력 "
+Write-Host ""
+if (0 -eq $server_queryport)
+{
+    Write-Host "쿼리 포트가 0 입니다. 기본값인 27015로 지정합니다" -Foregroundcolor "Green"
+    $server_queryport = 27015
+}
+Write-Host ""
+Write-Host "기본값인 8080번 포트가 uPNP사용 불가하여 8888 사용을 권장합니다" -Foregroundcolor "Green"
+Write-Host "웹어드민 포트 : 웹어드민 접속시 이용하는 포트 (기본값 : 8888)" -Foregroundcolor "Green"
+$server_webadminport = Read-Host "웹어드민 포트 입력 "
+Write-Host ""
+if (0 -eq $server_webadminport)
+{
+    Write-Host "웹어드민 포트가 0 입니다. 기본값인 8888으로 지정합니다" -Foregroundcolor "Green"
+    $server_webadminport = 8888
+}
 $Filepath1 = $install + "\KFGame\Config\PCServer-KFEngine.ini"
 $steamworkshop = Get-Content $Filepath1
  if ($steamworkshop | Select-String -Pattern "DownloadManagers=OnlineSubsystemSteamworks" -Quiet){
