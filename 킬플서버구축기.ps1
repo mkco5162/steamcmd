@@ -6,7 +6,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.2.3                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.3.2                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2021.05.20  " -Foregroundcolor "Red" -NoNewline
@@ -28,9 +28,11 @@
     Write-Host "2. Config 재설정 (Config 설정, 커스텀맵 추가, 서버 실행기 재설정)"
     Write-Host "3. 포트포워딩 (uPNP)"
     Write-Host "4. 다중서버 생성"
-    Write-Host "5. 프로그램 종"
+    Write-Host "5. 서버 업데이트 및 무결성 검사 (정식/베타)"
+    Write-Host "6. 프로그램 종료"
     Write-Host ""
     Write-Host "만일 서버오류로 인해 재설정이 필요 할 경우 config 폴더 삭제 후 재설치를 권장합니다"
+    Write-Host "베타버전 서버 설치를 위해서 서버 설치 후, 업데이트 하시기 바랍니다"
     Write-Host ""
     $Select_mainmenu = Read-Host "번호를 입력해 주시기 바랍니다 "
     switch ($Select_mainmenu)
@@ -50,6 +52,7 @@
             Write-Host "킬링플로어 서버가 설치된 폴더를 선택해 주십시오" -Foregroundcolor "Green"
             $script:install = Find-Folders
             $script:steamcmd = $script:install + "\cmd"
+            $script:runcmd = $script:steamcmd + "\steamcmd.exe"
             Config_setting
 	        add_custom_maps
             Install_done
@@ -63,11 +66,19 @@
             Clear-Host
             Write-Host "4. 다중서버 생성" -Foregroundcolor "Green"
             make_multi_server
+
         }
         '5' {
             Clear-Host
-            Write-Host "5. 프로그램 종료" -Foregroundcolor "Green"
-            exit료
+            Write-Host "5. 서버 업데이트 및 무결성 검사 (정식/베타)" -Foregroundcolor "Green"
+            Write-Host "킬링플로어 서버가 설치된 폴더를 선택해 주십시오" -Foregroundcolor "Green"
+            $script:install = Find-Folders
+            Install_What
+        }
+        '6' {
+            Clear-Host
+            Write-Host "6. 프로그램 종료" -Foregroundcolor "Green"
+            exit
         }
         default {
             Clear-Host
@@ -76,7 +87,6 @@
         }
     }
  }
-
 
  function Check_Java_Installed {
     $check_java_install = & cmd /c "java -version 2>&1"
@@ -99,14 +109,12 @@
         }
      }
  }
-
  function Install_close {
     Write-Host "답이 틀렸습니다. 설치를 종료하고 자바 다운로드 페이지로 연결합니다." -Foregroundcolor "Green"
     Read-Host "엔터를 눌러 자바11 다운로드 페이지로 연결합니다" -Foregroundcolor "Green"
     start-process "https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot"
     exit
  }
-
  function Find-Folders {
     [Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
     [System.Windows.Forms.Application]::EnableVisualStyles()
@@ -114,16 +122,13 @@
     $browse.SelectedPath = "C:\"
     $browse.ShowNewFolderButton = $false
     $browse.Description = "Select a directory"
-
     $loop = $true
     while($loop)
     {
         if ($browse.ShowDialog() -eq "OK")
         {
         $loop = $false
-		
 		#Insert your script here
-		
         } else
         {
             $res = [System.Windows.Forms.MessageBox]::Show("선택을 취소하셨습니다. 다시 선택하시겠습니까?", "Select a location", [System.Windows.Forms.MessageBoxButtons]::RetryCancel)
@@ -138,7 +143,6 @@
     $browse.SelectedPath
     $browse.Dispose()
 }
-
  function Start_Portmapper {
  $myip = ((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
  java -jar $runportmapper -add -externalPort $server_gameport -internalPort $server_gameport -ip $myip -protocol udp
@@ -249,13 +253,45 @@ Write-Host "만일 정상적인 창작마당 ID임에도 불구하고 등록이 
 add_custom_maps
 }
 }
-
+function Install_What {
+    $script:steamcmd = $script:install + "\cmd"
+    $script:runcmd = $script:steamcmd + "\steamcmd.exe"
+    $script:cmdscript = $script:steamcmd + "\Update_KF2.txt"
+    $script:cmdscript_beta = $script:steamcmd + "\Update_KF2_Beta.txt"
+    Set-Content $script:cmdscript "login anonymous`nforce_install_dir $script:install`napp_update 232130 validate`nexit"
+    Set-Content $script:cmdscript_beta "login anonymous`nforce_install_dir $script:install`napp_update 232130 -beta preview validate`nexit"
+    $script:creatbat = $script:steamcmd + "\Update.bat"
+    $script:creatbat_beta = $script:steamcmd + "\Update_beta.bat"
+    $script:battext = $script:runcmd + " +runscript Update_KF2.txt"
+    $script:battext_beta = $script:runcmd + " +runscript Update_KF2_Beta.txt"
+    Set-Content $script:creatbat $script:battext
+    Set-Content $script:creatbat_beta $script:battext_beta
+    $script:startinstall = $script:steamcmd + "\Update.bat"
+    $script:startinstall_beta = $script:steamcmd + "\Update_beta.bat"
+    $script:startinstall_what = Read-Host "버전을 선택해 주시기 바랍니다 (정식:1, 베타:2) "
+    if ($script:startinstall_what -eq 1) {
+        Write-Host "현재 선택된 값은 " -Foregroundcolor "Green" -NoNewline
+        Write-Host ""정식"" -Foregroundcolor "Red" -NoNewline
+        Write-Host " 입니다." -Foregroundcolor "Green"
+        Start-Process $script:startinstall    
+    }
+    elseif ($script:startinstall_what -eq 2) {
+        Write-Host "현재 선택된 값은 " -Foregroundcolor "Green" -NoNewline
+        Write-Host ""베타"" -Foregroundcolor "Cyan" -NoNewline
+        Write-Host " 입니다." -Foregroundcolor "Green"
+        Start-Process $script:startinstall_beta    
+    }
+    else {
+        Write-Host "입력 값이 올바르지 않습니다" -Foregroundcolor "Red"
+        Write-Host "다시 선택해주시기 바랍니다" -Foregroundcolor "Red"
+        Install_What
+    }
+}
  function Install_start {
 Write-Host "킬링플로어2 데디케이트 서버를 설치할 폴더를 지정해주세요" -Foregroundcolor "Green"
 $script:install = Find-Folders
 $script:steamcmd = $script:install + "\cmd"
 mkdir $script:steamcmd
-
 $script:runcmd = $script:steamcmd + "\steamcmd.exe"
 $script:runportmapper = $script:steamcmd + "\portmapper-2.2.1.jar"
 $script:get_workshoplist = $script:steamcmd + "\workshoplist.txt"
@@ -263,13 +299,7 @@ wget https://github.com/mkco5162/steamcmd/raw/main/steamcmd.exe -outfile $script
 wget https://github.com/mkco5162/steamcmd/raw/main/portmapper-2.2.1.jar -outfile $script:runportmapper
 wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/workshoplist.txt -outfile $script:get_workshoplist
 #Invoke-item $steamcmd
-$script:cmdscript = $script:steamcmd + "\Install_KF2.txt"
-Set-Content $script:cmdscript "login anonymous`nforce_install_dir $script:install`napp_update 232130 validate`nexit"
-$script:creatbat = $script:steamcmd + "\install.bat"
-$script:battext = $script:runcmd + " +runscript Install_KF2.txt"
-Set-Content $script:creatbat $battext
-$script:startinstall = $script:steamcmd + "\install.bat"
-Start-Process $script:startinstall
+Install_What
 Start-Sleep -s 3
 wait-process -name steamcmd
 $script:Serverinstall = $script:install + "\Binaries\win64\KFServer"
