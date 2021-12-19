@@ -6,7 +6,7 @@
     Write-Host "  7Days To Die Dedicated Server Maker            " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 0.0.0 Alpha                          " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.0.0                                " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########                                                 ##########" -Foregroundcolor "Green"
     Write-Host "#####################################################################" -Foregroundcolor "Green"
