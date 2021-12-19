@@ -6,7 +6,7 @@
     Write-Host "  7Days To Die Dedicated Server Maker            " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.0.0                                " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.0.2                                " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########                                                 ##########" -Foregroundcolor "Green"
     Write-Host "#####################################################################" -Foregroundcolor "Green"
@@ -206,7 +206,7 @@ wget https://github.com/mkco5162/steamcmd/raw/main/portmapper-2.2.1.jar -outfile
 Install_What
 Start-Sleep -s 3
 wait-process -name steamcmd
-wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/7DTD/start.bat -outfile $script:get_startbat
+wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/7DTD/startdedicated.bat -outfile $script:get_startbat
 $script:Serverinstall = $script:install + "\startdedicated.bat"
 Start-Process $script:Serverinstall
 Write-Host ""
