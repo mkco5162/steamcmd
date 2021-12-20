@@ -6,7 +6,7 @@
     Write-Host "  7Days To Die Dedicated Server Maker            " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.0.2                                " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.0.3                                " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########                                                 ##########" -Foregroundcolor "Green"
     Write-Host "#####################################################################" -Foregroundcolor "Green"
@@ -16,22 +16,22 @@
  }
 
   function MainMenu {
-    Write-Host "<¸ŞÀÎ¸Ş´º>" -Foregroundcolor "Cyan"
+    Write-Host "<ë©”ì¸ë©”ë‰´>" -Foregroundcolor "Cyan"
     Write-Host ""
-    Write-Host "1. 7DTD µ¥µğÄÉÀÌÆ® ¼­¹ö ¼³Ä¡ (Config¼³Á¤ ¹× Æ÷Æ®Æ÷¿öµù Æ÷ÇÔ)"
-    Write-Host "2. Config Àç¼³Á¤ (Config ¼³Á¤, Ä¿½ºÅÒ¸Ê Ãß°¡, ¼­¹ö ½ÇÇà±â Àç¼³Á¤)"
-    Write-Host "3. Æ÷Æ®Æ÷¿öµù (uPNP)"
-    Write-Host "4. ¼­¹ö ¾÷µ¥ÀÌÆ® ¹× ¹«°á¼º °Ë»ç (Á¤½Ä)"
-    Write-Host "5. ¾Ûµ¥ÀÌÅÍ Æú´õ ¿­±â"
-    Write-Host "6. ÇÁ·Î±×·¥ Á¾·á"
+    Write-Host "1. 7DTD ë°ë””ì¼€ì´íŠ¸ ì„œë²„ ì„¤ì¹˜ (Configì„¤ì • ë° í¬íŠ¸í¬ì›Œë”© í¬í•¨)"
+    Write-Host "2. Config ì¬ì„¤ì • (Config ì„¤ì •, ì»¤ìŠ¤í…€ë§µ ì¶”ê°€, ì„œë²„ ì‹¤í–‰ê¸° ì¬ì„¤ì •)"
+    Write-Host "3. í¬íŠ¸í¬ì›Œë”© (uPNP)"
+    Write-Host "4. ì„œë²„ ì—…ë°ì´íŠ¸ ë° ë¬´ê²°ì„± ê²€ì‚¬ (ì •ì‹)"
+    Write-Host "5. ì•±ë°ì´í„° í´ë” ì—´ê¸°"
+    Write-Host "6. í”„ë¡œê·¸ë¨ ì¢…ë£Œ"
     Write-Host ""
     Write-Host ""
-    $Select_mainmenu = Read-Host "¹øÈ£¸¦ ÀÔ·ÂÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù "
+    $Select_mainmenu = Read-Host "ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤ "
     switch ($Select_mainmenu)
     {
         '1' {
             Clear-Host
-            Write-Host "1. ¼­¹ö¼³Ä¡" -Foregroundcolor "Green"
+            Write-Host "1. ì„œë²„ì„¤ì¹˜" -Foregroundcolor "Green"
             Install_start
             Config_setting
             portmapping
@@ -39,8 +39,8 @@
         }
         '2' {
             Clear-Host
-            Write-Host "2. Config Àç¼³Á¤ (Config ¼³Á¤, Ä¿½ºÅÒ¸Ê Ãß°¡, ¼­¹ö ½ÇÇà±â Àç¼³Á¤)" -Foregroundcolor "Green"
-            Write-Host "7DTD ¼­¹ö°¡ ¼³Ä¡µÈ Æú´õ¸¦ ¼±ÅÃÇØ ÁÖ½Ê½Ã¿À" -Foregroundcolor "Green"
+            Write-Host "2. Config ì¬ì„¤ì • (Config ì„¤ì •, ì»¤ìŠ¤í…€ë§µ ì¶”ê°€, ì„œë²„ ì‹¤í–‰ê¸° ì¬ì„¤ì •)" -Foregroundcolor "Green"
+            Write-Host "7DTD ì„œë²„ê°€ ì„¤ì¹˜ëœ í´ë”ë¥¼ ì„ íƒí•´ ì£¼ì‹­ì‹œì˜¤" -Foregroundcolor "Green"
             $script:install = Find-Folders
             $script:steamcmd = $script:install + "\cmd"
             $script:runcmd = $script:steamcmd + "\steamcmd.exe"
@@ -49,28 +49,28 @@
         }
         '3' {
             Clear-Host
-            Write-Host "3. Æ÷Æ®Æ÷¿öµù (uPNP)" -Foregroundcolor "Green"
+            Write-Host "3. í¬íŠ¸í¬ì›Œë”© (uPNP)" -Foregroundcolor "Green"
             portmapping
         }
         '4' {
             Clear-Host
-            Write-Host "4. ¼­¹ö ¾÷µ¥ÀÌÆ® ¹× ¹«°á¼º °Ë»ç (Á¤½Ä)" -Foregroundcolor "Green"
-            Write-Host "7DTD ¼­¹ö°¡ ¼³Ä¡µÈ Æú´õ¸¦ ¼±ÅÃÇØ ÁÖ½Ê½Ã¿À" -Foregroundcolor "Green"
+            Write-Host "4. ì„œë²„ ì—…ë°ì´íŠ¸ ë° ë¬´ê²°ì„± ê²€ì‚¬ (ì •ì‹)" -Foregroundcolor "Green"
+            Write-Host "7DTD ì„œë²„ê°€ ì„¤ì¹˜ëœ í´ë”ë¥¼ ì„ íƒí•´ ì£¼ì‹­ì‹œì˜¤" -Foregroundcolor "Green"
             $script:install = Find-Folders
             Install_What
         }
         '5' {
-            Write-Host "5. ¾Ûµ¥ÀÌÅÍ Æú´õ ¿­±â" -Foregroundcolor "Green"
+            Write-Host "5. ì•±ë°ì´í„° í´ë” ì—´ê¸°" -Foregroundcolor "Green"
             open_appdata
         }
         '6' {
             Clear-Host
-            Write-Host "6. ÇÁ·Î±×·¥ Á¾·á" -Foregroundcolor "Green"
+            Write-Host "6. í”„ë¡œê·¸ë¨ ì¢…ë£Œ" -Foregroundcolor "Green"
             exit
         }
         default {
             Clear-Host
-            Write-Host "¼±ÅÃ°ªÀÌ ¾ø½À´Ï´Ù ´Ù½Ã ¼±ÅÃÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù" -Foregroundcolor "Green"
+            Write-Host "ì„ íƒê°’ì´ ì—†ìŠµë‹ˆë‹¤ ë‹¤ì‹œ ì„ íƒí•´ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤" -Foregroundcolor "Green"
             MainMenu
         }
     }
@@ -79,15 +79,15 @@
  function Check_Java_Installed {
     $check_java_install = & cmd /c "java -version 2>&1"
      if ($check_java_install | Select-String -Pattern "java version `"11.*`"." -Quiet){
-         Write-Host "ÀÚ¹Ù11 ¼³Ä¡°¡ È®ÀÎµÇ¾ú½À´Ï´Ù." -Foregroundcolor "Green"
+         Write-Host "ìë°”11 ì„¤ì¹˜ê°€ í™•ì¸ë˜ì—ˆìŠµë‹ˆë‹¤." -Foregroundcolor "Green"
      }
      else{
         Clear-Host
-        Write-Host "ÀÚ¹Ù°¡ ¼³Ä¡µÇ¾îÀÖÁö ¾Ê½À´Ï´Ù" -Foregroundcolor "Green"
-        Write-Host "¼³Ä¡¿¡´Â ÀÚ¹Ù 11ÀÌÈÄ ¹öÀüÀÌ ÇÊ¿äÇÕ´Ï´Ù" -Foregroundcolor "Green"
-        Write-Host "¸¸¾à ÀÚ¹Ù 11 ÀÌ»óÀÌ ¼³Ä¡µÇ¾îÀÖÀ½¿¡µµ ÀÎ½Ä¿¡ ½ÇÆĞÇÏ¿´À¸¸é ¾Æ·¡ ¹®±¸¸¦ ÀÔ·ÂÇØ ¼³Ä¡¸¦ °­Á¦·Î ÁøÇàÇÏ½Ê½Ã¿À" -Foregroundcolor "Green"
+        Write-Host "ìë°”ê°€ ì„¤ì¹˜ë˜ì–´ìˆì§€ ì•ŠìŠµë‹ˆë‹¤" -Foregroundcolor "Green"
+        Write-Host "ì„¤ì¹˜ì—ëŠ” ìë°” 11ì´í›„ ë²„ì „ì´ í•„ìš”í•©ë‹ˆë‹¤" -Foregroundcolor "Green"
+        Write-Host "ë§Œì•½ ìë°” 11 ì´ìƒì´ ì„¤ì¹˜ë˜ì–´ìˆìŒì—ë„ ì¸ì‹ì— ì‹¤íŒ¨í•˜ì˜€ìœ¼ë©´ ì•„ë˜ ë¬¸êµ¬ë¥¼ ì…ë ¥í•´ ì„¤ì¹˜ë¥¼ ê°•ì œë¡œ ì§„í–‰í•˜ì‹­ì‹œì˜¤" -Foregroundcolor "Green"
         Write-Host "force install" -Foregroundcolor "Green"
-        $java_force_install = Read-Host "´ä "
+        $java_force_install = Read-Host "ë‹µ "
         if ($java_force_install -eq "force install") {
         }
         else {
@@ -96,8 +96,8 @@
      }
  }
  function Install_close {
-    Write-Host "´äÀÌ Æ²·È½À´Ï´Ù. ¼³Ä¡¸¦ Á¾·áÇÏ°í ÀÚ¹Ù ´Ù¿î·Îµå ÆäÀÌÁö·Î ¿¬°áÇÕ´Ï´Ù." -Foregroundcolor "Green"
-    Read-Host "¿£ÅÍ¸¦ ´­·¯ ÀÚ¹Ù11 ´Ù¿î·Îµå ÆäÀÌÁö·Î ¿¬°áÇÕ´Ï´Ù"
+    Write-Host "ë‹µì´ í‹€ë ¸ìŠµë‹ˆë‹¤. ì„¤ì¹˜ë¥¼ ì¢…ë£Œí•˜ê³  ìë°” ë‹¤ìš´ë¡œë“œ í˜ì´ì§€ë¡œ ì—°ê²°í•©ë‹ˆë‹¤." -Foregroundcolor "Green"
+    Read-Host "ì—”í„°ë¥¼ ëˆŒëŸ¬ ìë°”11 ë‹¤ìš´ë¡œë“œ í˜ì´ì§€ë¡œ ì—°ê²°í•©ë‹ˆë‹¤"
     start-process "https://adoptium.net/releases.html?variant=openjdk11"
     exit
  }
@@ -117,7 +117,7 @@
 		#Insert your script here
         } else
         {
-            $res = [System.Windows.Forms.MessageBox]::Show("¼±ÅÃÀ» Ãë¼ÒÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ¼±ÅÃÇÏ½Ã°Ú½À´Ï±î?", "Select a location", [System.Windows.Forms.MessageBoxButtons]::RetryCancel)
+            $res = [System.Windows.Forms.MessageBox]::Show("ì„ íƒì„ ì·¨ì†Œí•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì„ íƒí•˜ì‹œê² ìŠµë‹ˆê¹Œ?", "Select a location", [System.Windows.Forms.MessageBoxButtons]::RetryCancel)
             if($res -eq "Cancel")
             {
                 exit
@@ -137,8 +137,8 @@
  java -jar $script:runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -add -externalPort $script:server_gameport4 -internalPort $script:server_gameport4 -protocol udp
  cls
  java -jar $script:runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -list
- Write-host "·Î±× ¸¶Áö¸· ºÎºĞ¿¡ Æ÷Æ®Æ÷¿öµù ¸®½ºÆ®°¡ ¾øÀ»°æ¿ì °ü¸®ÀÚ¿¡°Ô ¹®ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù." -Foregroundcolor "Red"
- Read-Host "¿£ÅÍ¸¦ ´­·¯ °è¼Ó ÁøÇàÇÕ´Ï´Ù."
+ Write-host "ë¡œê·¸ ë§ˆì§€ë§‰ ë¶€ë¶„ì— í¬íŠ¸í¬ì›Œë”© ë¦¬ìŠ¤íŠ¸ê°€ ì—†ì„ê²½ìš° ê´€ë¦¬ìì—ê²Œ ë¬¸ì˜í•˜ì‹œê¸° ë°”ëë‹ˆë‹¤." -Foregroundcolor "Red"
+ Read-Host "ì—”í„°ë¥¼ ëˆŒëŸ¬ ê³„ì† ì§„í–‰í•©ë‹ˆë‹¤."
  }
 
 function portmapping {
@@ -146,37 +146,37 @@ function portmapping {
     $script:server_gameport2 = 25001
     $script:server_gameport3 = 25002
     $script:server_gameport4 = 25003
-    Write-Host "Æ÷Æ®Æ÷¿öµùÀ» ÀÚµ¿À¸·Î ÇÏ½Ç °æ¿ì uPNP±â´ÉÀ» »ç¿ëÇÏ¿© ÁøÇàÇÕ´Ï´Ù" -Foregroundcolor "Green"
-    $script:portmapping = Read-Host "Æ÷Æ®Æ÷¿öµùÀ» ÀÚµ¿À¸·Î ÁøÇà ÇÏ½Ã°Ú½À´Ï±î? (Y/N) "
+    Write-Host "í¬íŠ¸í¬ì›Œë”©ì„ ìë™ìœ¼ë¡œ í•˜ì‹¤ ê²½ìš° uPNPê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ì—¬ ì§„í–‰í•©ë‹ˆë‹¤" -Foregroundcolor "Green"
+    $script:portmapping = Read-Host "í¬íŠ¸í¬ì›Œë”©ì„ ìë™ìœ¼ë¡œ ì§„í–‰ í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (Y/N) "
     if ("Y" -eq $portmapping) {
         if ($script:install -eq $null) {
             $script:install = Find-Folders
         }
         Check_Java_Installed
         Start_Portmapper
-        #portmapper ½ÇÇà ÈÄ ÁöÁ¤µÈ Æ÷Æ® Æ÷Æ®Æ÷¿öµù
+        #portmapper ì‹¤í–‰ í›„ ì§€ì •ëœ í¬íŠ¸ í¬íŠ¸í¬ì›Œë”©
     }
     elseif ("N" -eq $portmapping) {
-        Write-Host "Æ÷Æ®¸ÅÇÎÀ» Ãë¼ÒÇÏ¼Ì½À´Ï´Ù. ¼öµ¿À¸·Î Æ÷Æ®Æ÷¿öµù ÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù" -Foregroundcolor "Green"
+        Write-Host "í¬íŠ¸ë§¤í•‘ì„ ì·¨ì†Œí•˜ì…¨ìŠµë‹ˆë‹¤. ìˆ˜ë™ìœ¼ë¡œ í¬íŠ¸í¬ì›Œë”© í•´ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤" -Foregroundcolor "Green"
         Write-Host ""
         Write-Host ""
-        Write-Host "Æ÷Æ®Æ÷¿öµùÀÌ ÇÊ¿äÇÑ Æ÷Æ®¸¦ ¾È³»µå¸³´Ï´Ù." -Foregroundcolor "Green"
-        Write-Host "¾Æ·¡ Æ÷Æ®µéÀ» Æ÷Æ®Æ÷¿öµù ÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù" -Foregroundcolor "Green"
+        Write-Host "í¬íŠ¸í¬ì›Œë”©ì´ í•„ìš”í•œ í¬íŠ¸ë¥¼ ì•ˆë‚´ë“œë¦½ë‹ˆë‹¤." -Foregroundcolor "Green"
+        Write-Host "ì•„ë˜ í¬íŠ¸ë“¤ì„ í¬íŠ¸í¬ì›Œë”© í•´ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤" -Foregroundcolor "Green"
         Write-Host ""
-        Write-Host "Æ÷Æ® Á¾·ù        Æ÷Æ®¹øÈ£     ÇÁ·ÎÅäÄİ" -Foregroundcolor "Yellow"
+        Write-Host "í¬íŠ¸ ì¢…ë¥˜        í¬íŠ¸ë²ˆí˜¸     í”„ë¡œí† ì½œ" -Foregroundcolor "Yellow"
         Write-Host ""
-        Write-Host "°ÔÀÓ Æ÷Æ®1        $script:server_gameport1         UDP" -Foregroundcolor "Cyan"
-        Write-Host "°ÔÀÓ Æ÷Æ®2        $script:server_gameport2         UDP" -Foregroundcolor "Cyan"
-        Write-Host "°ÔÀÓ Æ÷Æ®3        $script:server_gameport3         UDP" -Foregroundcolor "Cyan"
-        Write-Host "°ÔÀÓ Æ÷Æ®4        $script:server_gameport4         UDP" -Foregroundcolor "Cyan"
+        Write-Host "ê²Œì„ í¬íŠ¸1        $script:server_gameport1         UDP" -Foregroundcolor "Cyan"
+        Write-Host "ê²Œì„ í¬íŠ¸2        $script:server_gameport2         UDP" -Foregroundcolor "Cyan"
+        Write-Host "ê²Œì„ í¬íŠ¸3        $script:server_gameport3         UDP" -Foregroundcolor "Cyan"
+        Write-Host "ê²Œì„ í¬íŠ¸4        $script:server_gameport4         UDP" -Foregroundcolor "Cyan"
         Write-Host ""
         Write-Host ""
     }
     else {
         Clear-Host
-        Write-Host "Àß¸øµÈ °ªÀÌ ¼±ÅÃµÇ¾ú½À´Ï´Ù. ´Ù½Ã ¼±ÅÃÇØÁÖ½Ã±â ¹Ù¶ø´Ï´Ù" -Foregroundcolor "Green"
+        Write-Host "ì˜ëª»ëœ ê°’ì´ ì„ íƒë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì„ íƒí•´ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤" -Foregroundcolor "Green"
         portmapping
-        #ÀÚµ¿/¼öµ¿ºĞ±â ½ÇÆĞ½Ã ´Ù½Ã½Ãµµ
+        #ìë™/ìˆ˜ë™ë¶„ê¸° ì‹¤íŒ¨ì‹œ ë‹¤ì‹œì‹œë„
     }
 }
 
@@ -193,7 +193,7 @@ function Install_What {
     }
 
  function Install_start {
-Write-Host "7DTD µ¥µğÄÉÀÌÆ® ¼­¹ö¸¦ ¼³Ä¡ÇÒ Æú´õ¸¦ ÁöÁ¤ÇØÁÖ¼¼¿ä" -Foregroundcolor "Green"
+Write-Host "7DTD ë°ë””ì¼€ì´íŠ¸ ì„œë²„ë¥¼ ì„¤ì¹˜í•  í´ë”ë¥¼ ì§€ì •í•´ì£¼ì„¸ìš”" -Foregroundcolor "Green"
 $script:install = Find-Folders
 $script:steamcmd = $script:install + "\cmd"
 mkdir $script:steamcmd
@@ -210,7 +210,7 @@ wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/7DTD/startdedicate
 $script:Serverinstall = $script:install + "\startdedicated.bat"
 Start-Process $script:Serverinstall
 Write-Host ""
-Write-Host "¾à 2ºĞ ÈÄ ¼­¹ö ½ÇÇàÀÌ ¿Ï·áµÇ¸é ¼³Ä¡°¡ °è¼ÓµË´Ï´Ù" -Foregroundcolor "Cyan"
+Write-Host "ì•½ 2ë¶„ í›„ ì„œë²„ ì‹¤í–‰ì´ ì™„ë£Œë˜ë©´ ì„¤ì¹˜ê°€ ê³„ì†ë©ë‹ˆë‹¤" -Foregroundcolor "Cyan"
 Write-Host ""
 Start-Sleep -s 120
 Stop-Process -Name "7DaysToDieServer"
@@ -220,129 +220,129 @@ Stop-Process -Name "cmd"
  function Config_setting {
 $script:Filepath1 = $install + "\serverconfig.xml"
 $script:steamworkshop = Get-Content $script:Filepath1
-$script:input_servername = Read-Host "¼­¹ö ÀÌ¸§À» ÁöÁ¤ÇØ ÁÖ½Ê½Ã¿À"
+$script:input_servername = Read-Host "ì„œë²„ ì´ë¦„ì„ ì§€ì •í•´ ì£¼ì‹­ì‹œì˜¤"
 Write-Host ""
 $script:Set_servername = 'value="' + $script:input_servername + '"'
 (Get-Content $script:Filepath1).replace("value=`"My Game Host`"",$script:Set_servername) | Set-Content $script:Filepath1
 Write-Host ""
-Write-Host "Áö±İºÎÅÍ °ÔÀÓ ¼¼ºÎ¼³Á¤À» ÁøÇàÇÕ´Ï´Ù." -Foregroundcolor "Green"
-Write-Host "±âº»°ªÀ¸·Î »ç¿ëÇÏ½Ã·Á¸é ±×³É ¿£ÅÍ¸¦ ´­·¯ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù." -Foregroundcolor "Green"
+Write-Host "ì§€ê¸ˆë¶€í„° ê²Œì„ ì„¸ë¶€ì„¤ì •ì„ ì§„í–‰í•©ë‹ˆë‹¤." -Foregroundcolor "Green"
+Write-Host "ê¸°ë³¸ê°’ìœ¼ë¡œ ì‚¬ìš©í•˜ì‹œë ¤ë©´ ê·¸ëƒ¥ ì—”í„°ë¥¼ ëˆŒëŸ¬ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤." -Foregroundcolor "Green"
 Write-Host ""
-$script:server_ServerPassword = Read-Host "¼­¹ö ºñ¹Ğ¹øÈ£ ¼³Á¤. ¾øÀ»°æ¿ì °ø¶õ "
+$script:server_ServerPassword = Read-Host "ì„œë²„ ë¹„ë°€ë²ˆí˜¸ ì„¤ì •. ì—†ì„ê²½ìš° ê³µë€ "
 $script:server_ServerPassword_line = Select-String "ServerPassword" $script:Filepath1
 $script:server_ServerPassword_value = '"<property name="ServerPassword"					value="' + $script:ServerPassword + '"/>'
 (Get-Content $script:Filepath1).replace($script:ServerPassword_line.Line,$script:ServerPassword_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_difficulty = Read-Host "¼­¹ö ³­ÀÌµµ ¼³Á¤ (Scavenger:0, Adventurer:1, Nomad(±âº»°ª):2, Warrior:3, Survivalisk:4, Insane:5) "
+$script:server_difficulty = Read-Host "ì„œë²„ ë‚œì´ë„ ì„¤ì • (Scavenger:0, Adventurer:1, Nomad(ê¸°ë³¸ê°’):2, Warrior:3, Survivalisk:4, Insane:5) "
 $script:server_difficulty_line = Select-String "GameDifficulty" $script:Filepath1
 $script:server_difficulty_value = '<property name="GameDifficulty"					value="' + $script:server_difficulty + '"/>'
 (Get-Content $script:Filepath1).replace($script:server_difficulty_line.Line,$script:server_difficulty_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_BlockDamagePlayer = Read-Host "BlockDamagePlayer (À¯Àú°¡ ºí·Ï¿¡ ÁÖ´Â µ¥¹ÌÁö ¹èÀ². ±âº»°ª:100) "
+$script:server_BlockDamagePlayer = Read-Host "BlockDamagePlayer (ìœ ì €ê°€ ë¸”ë¡ì— ì£¼ëŠ” ë°ë¯¸ì§€ ë°°ìœ¨. ê¸°ë³¸ê°’:100) "
 $script:server_BlockDamagePlayer_line = Select-String "BlockDamagePlayer" $script:Filepath1
 $script:server_BlockDamagePlayer_value = '<property name="BlockDamagePlayer"				value="' + $script:server_BlockDamagePlayer + '" />'
 (Get-Content $script:Filepath1).replace($script:server_BlockDamagePlayer_line.Line,$script:server_BlockDamagePlayer_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_BlockDamageAI = Read-Host "BlockDamageAI (AI(Á»ºñ)°¡ ºí·Ï¿¡ ÁÖ´Â µ¥¹ÌÁö ¹èÀ². ±âº»°ª:100) "
+$script:server_BlockDamageAI = Read-Host "BlockDamageAI (AI(ì¢€ë¹„)ê°€ ë¸”ë¡ì— ì£¼ëŠ” ë°ë¯¸ì§€ ë°°ìœ¨. ê¸°ë³¸ê°’:100) "
 $script:server_BlockDamageAI_line = Select-String "BlockDamageAI" $script:Filepath1
 $script:server_BlockDamageAI_value = '<property name="BlockDamageAI"					value="' + $script:server_BlockDamageAI + '" />'
 (Get-Content $script:Filepath1).replace($script:server_BlockDamageAI_line.Line[0],$script:server_BlockDamageAI_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_BlockDamageAIBM = Read-Host "BlockDamageAIBM (AI(Á»ºñ)°¡ ºí·¯µå¹® ±â°£µ¿¾È ºí·Ï¿¡ ÁÖ´Â µ¥¹ÌÁö ¹èÀ². ±âº»°ª:100) "
+$script:server_BlockDamageAIBM = Read-Host "BlockDamageAIBM (AI(ì¢€ë¹„)ê°€ ë¸”ëŸ¬ë“œë¬¸ ê¸°ê°„ë™ì•ˆ ë¸”ë¡ì— ì£¼ëŠ” ë°ë¯¸ì§€ ë°°ìœ¨. ê¸°ë³¸ê°’:100) "
 $script:server_BlockDamageAIBM_line = Select-String "BlockDamageAIBM" $script:Filepath1
 $script:server_BlockDamageAIBM_value = '<property name="BlockDamageAIBM"				value="' + $script:server_BlockDamageAIBM + '" />'
 (Get-Content $script:Filepath1).replace($script:server_BlockDamageAIBM_line.Line,$script:server_BlockDamageAIBM_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_XPMultiplier = Read-Host "XPMultiplier (AI(Á»ºñ)°¡ ºí·¯µå¹® ±â°£µ¿¾È ºí·Ï¿¡ ÁÖ´Â µ¥¹ÌÁö ¹èÀ². ±âº»°ª:100) "
+$script:server_XPMultiplier = Read-Host "XPMultiplier (AI(ì¢€ë¹„)ê°€ ë¸”ëŸ¬ë“œë¬¸ ê¸°ê°„ë™ì•ˆ ë¸”ë¡ì— ì£¼ëŠ” ë°ë¯¸ì§€ ë°°ìœ¨. ê¸°ë³¸ê°’:100) "
 $script:server_XPMultiplier_line = Select-String "XPMultiplier" $script:Filepath1
 $script:server_XPMultiplier_value = '<property name="XPMultiplier"					value="' + $script:server_XPMultiplier + '" />'
 (Get-Content $script:Filepath1).replace($script:server_XPMultiplier_line.Line,$script:server_XPMultiplier_value) | Set-Content $script:Filepath1
 Write-Host ""
 
-$script:server_DayNightLength = Read-Host "DayNightLength (ÀÎ°ÔÀÓ 24½Ã°£ÀÌ Èê·¯°¡´Âµ¥ ¼Ò¿äµÇ´Â ½Ã°£. ´ÜÀ§: ºĞ, ±âº»°ª: 60) "
+$script:server_DayNightLength = Read-Host "DayNightLength (ì¸ê²Œì„ 24ì‹œê°„ì´ í˜ëŸ¬ê°€ëŠ”ë° ì†Œìš”ë˜ëŠ” ì‹œê°„. ë‹¨ìœ„: ë¶„, ê¸°ë³¸ê°’: 60) "
 $script:server_DayNightLength_line = Select-String "DayNightLength" $script:Filepath1
 $script:server_DayNightLength_value = '<property name="DayNightLength"					value="' + $script:server_DayNightLength + '" />'
 (Get-Content $script:Filepath1).replace($script:server_DayNightLength_line.Line,$script:server_DayNightLength_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_DayLightLength = Read-Host "DayLightLength (ÀÎ°ÔÀÓ 24½Ã°£Áß ³·ÀÌ Â÷ÁöÇÏ´Â ½Ã°£. ´ÜÀ§: ½Ã°£, ±âº»°ª: 18) "
+$script:server_DayLightLength = Read-Host "DayLightLength (ì¸ê²Œì„ 24ì‹œê°„ì¤‘ ë‚®ì´ ì°¨ì§€í•˜ëŠ” ì‹œê°„. ë‹¨ìœ„: ì‹œê°„, ê¸°ë³¸ê°’: 18) "
 $script:server_DayLightLength_line = Select-String "DayLightLength" $script:Filepath1
 $script:server_DayLightLength_value = '<property name="DayLightLength"					value="' + $script:server_DayLightLength + '" />'
 (Get-Content $script:Filepath1).replace($script:server_DayLightLength_line.Line,$script:server_DayLightLength_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_DropOnDeath = Read-Host "DropOnDeath (»ç¸Á½Ã ¾ÆÀÌÅÛ µå¶ø¿©ºÎ. nothing: 0 everything: 1 toolbelt_only: 2 backpack_only: 3 delete_all: 4, ±âº»°ª: 1) "
+$script:server_DropOnDeath = Read-Host "DropOnDeath (ì‚¬ë§ì‹œ ì•„ì´í…œ ë“œëì—¬ë¶€. nothing: 0 everything: 1 toolbelt_only: 2 backpack_only: 3 delete_all: 4, ê¸°ë³¸ê°’: 1) "
 $script:server_DropOnDeath_line = Select-String "DropOnDeath" $script:Filepath1
 $script:server_DropOnDeath_value = '<property name="DropOnDeath"					value="' + $script:server_DropOnDeath + '" />'
 (Get-Content $script:Filepath1).replace($script:server_DropOnDeath_line.Line,$script:server_DropOnDeath_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_MaxSpawnedZombies = Read-Host "MaxSpawnedZombies (ÃÖ´ë Á»ºñ ½ºÆù·®. ±âº»°ª: 64) "
+$script:server_MaxSpawnedZombies = Read-Host "MaxSpawnedZombies (ìµœëŒ€ ì¢€ë¹„ ìŠ¤í°ëŸ‰. ê¸°ë³¸ê°’: 64) "
 $script:server_MaxSpawnedZombies_line = Select-String "MaxSpawnedZombies" $script:Filepath1
 $script:server_MaxSpawnedZombies_value = '<property name="MaxSpawnedZombies"				value="' + $script:server_MaxSpawnedZombies + '" />'
 (Get-Content $script:Filepath1).replace($script:server_MaxSpawnedZombies_line.Line[0],$script:server_MaxSpawnedZombies_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_MaxSpawnedAnimals = Read-Host "MaxSpawnedAnimals (ÃÖ´ë µ¿¹° ½ºÆù·®. ±âº»°ª: 50) "
+$script:server_MaxSpawnedAnimals = Read-Host "MaxSpawnedAnimals (ìµœëŒ€ ë™ë¬¼ ìŠ¤í°ëŸ‰. ê¸°ë³¸ê°’: 50) "
 $script:server_MaxSpawnedAnimals_line = Select-String "MaxSpawnedAnimals" $script:Filepath1
 $script:server_MaxSpawnedAnimals_value = '<property name="MaxSpawnedAnimals"				value="' + $script:server_MaxSpawnedAnimals + '" />'
 (Get-Content $script:Filepath1).replace($script:server_MaxSpawnedAnimals_line.Line,$script:server_MaxSpawnedAnimals_value) | Set-Content $script:Filepath1
 Write-Host ""
 
-$script:server_ZombieMove = Read-Host "ZombieMove (Á»ºñ ÀÌµ¿ ¼Óµµ. ±âº»°ª: 0, 0-4 (walk, jog, run, sprint, nightmare)) "
+$script:server_ZombieMove = Read-Host "ZombieMove (ì¢€ë¹„ ì´ë™ ì†ë„. ê¸°ë³¸ê°’: 0, 0-4 (walk, jog, run, sprint, nightmare)) "
 $script:server_ZombieMove_line = Select-String "ZombieMove" $script:Filepath1
 $script:server_ZombieMove_value = '<property name="ZombieMove"						value="' + $script:server_ZombieMove + '" />'
 (Get-Content $script:Filepath1).replace($script:server_ZombieMove_line.Line[0],$script:server_ZombieMove_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_ZombieMoveNight = Read-Host "ZombieMoveNight (¾ß°£ Á»ºñ ÀÌµ¿ ¼Óµµ. ±âº»°ª: 3, 0-4 (walk, jog, run, sprint, nightmare)) "
+$script:server_ZombieMoveNight = Read-Host "ZombieMoveNight (ì•¼ê°„ ì¢€ë¹„ ì´ë™ ì†ë„. ê¸°ë³¸ê°’: 3, 0-4 (walk, jog, run, sprint, nightmare)) "
 $script:server_ZombieMoveNight_line = Select-String "ZombieMoveNight" $script:Filepath1
 $script:server_ZombieMoveNight_value = '<property name="ZombieMoveNight"				value="' + $script:server_ZombieMoveNight + '" />'
 (Get-Content $script:Filepath1).replace($script:server_ZombieMoveNight_line.Line,$script:server_ZombieMoveNight_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_ZombieFeralMove = Read-Host "ZombieFeralMove (±¸¿ï(?) ÀÌµ¿ ¼Óµµ. ±âº»°ª: 3, 0-4 (walk, jog, run, sprint, nightmare)) "
+$script:server_ZombieFeralMove = Read-Host "ZombieFeralMove (êµ¬ìš¸(?) ì´ë™ ì†ë„. ê¸°ë³¸ê°’: 3, 0-4 (walk, jog, run, sprint, nightmare)) "
 $script:server_ZombieFeralMove_line = Select-String "ZombieFeralMove" $script:Filepath1
 $script:server_ZombieFeralMove_value = '<property name="ZombieFeralMove"				value="' + $script:server_ZombieFeralMove + '" />'
 (Get-Content $script:Filepath1).replace($script:server_ZombieFeralMove_line.Line,$script:server_ZombieFeralMove_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_ZombieBMMove = Read-Host "ZombieBMMove (ºí·¯µå¹® ÀÌµ¿ ¼Óµµ. ±âº»°ª: 3, 0-4 (walk, jog, run, sprint, nightmare)) "
+$script:server_ZombieBMMove = Read-Host "ZombieBMMove (ë¸”ëŸ¬ë“œë¬¸ ì´ë™ ì†ë„. ê¸°ë³¸ê°’: 3, 0-4 (walk, jog, run, sprint, nightmare)) "
 $script:server_ZombieBMMove_line = Select-String "ZombieBMMove" $script:Filepath1
 $script:server_ZombieBMMove_value = '<property name="ZombieBMMove"					value="' + $script:server_ZombieBMMove + '" />'
 (Get-Content $script:Filepath1).replace($script:server_ZombieBMMove_line.Line,$script:server_ZombieBMMove_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_BloodMoonFrequency = Read-Host "BloodMoonFrequency (ºí·¯µå¹® ºóµµ. ´ÜÀ§: ÀÏ, ±âº»°ª: 7) "
+$script:server_BloodMoonFrequency = Read-Host "BloodMoonFrequency (ë¸”ëŸ¬ë“œë¬¸ ë¹ˆë„. ë‹¨ìœ„: ì¼, ê¸°ë³¸ê°’: 7) "
 $script:server_BloodMoonFrequency_line = Select-String "BloodMoonFrequency" $script:Filepath1
 $script:server_BloodMoonFrequency_value = '<property name="BloodMoonFrequency"				value="' + $script:server_BloodMoonFrequency + '" />'
 (Get-Content $script:Filepath1).replace($script:server_BloodMoonFrequency_line.Line[0],$script:server_BloodMoonFrequency_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_BloodMoonEnemyCount = Read-Host "BloodMoonEnemyCount (1ÀÎ´ç ºí·¯µå¹® Á»ºñ ¼ıÀÚ. ±âº»°ª: 8) "
+$script:server_BloodMoonEnemyCount = Read-Host "BloodMoonEnemyCount (1ì¸ë‹¹ ë¸”ëŸ¬ë“œë¬¸ ì¢€ë¹„ ìˆ«ì. ê¸°ë³¸ê°’: 8) "
 $script:server_BloodMoonEnemyCount_line = Select-String "BloodMoonEnemyCount" $script:Filepath1
 $script:server_BloodMoonEnemyCount_value = '<property name="BloodMoonEnemyCount"			value="' + $script:server_BloodMoonEnemyCount + '" />'
 (Get-Content $script:Filepath1).replace($script:server_BloodMoonEnemyCount_line.Line,$script:server_BloodMoonEnemyCount_value) | Set-Content $script:Filepath1
 Write-Host ""
 
-$script:server_LootAbundance = Read-Host "LootAbundance (·çÆÃ ¹èÀ² ¼³Á¤. ³ô°Ô ¼³Á¤ÇÏ¸é ÅÛ ¼ö·®ÀÌ ¸¹¾ÆÁü. ±âº»°ª: 100) "
+$script:server_LootAbundance = Read-Host "LootAbundance (ë£¨íŒ… ë°°ìœ¨ ì„¤ì •. ë†’ê²Œ ì„¤ì •í•˜ë©´ í…œ ìˆ˜ëŸ‰ì´ ë§ì•„ì§. ê¸°ë³¸ê°’: 100) "
 $script:server_LootAbundance_line = Select-String "LootAbundance" $script:Filepath1
 $script:server_LootAbundance_value = '<property name="LootAbundance"					value="' + $script:server_LootAbundance + '" />'
 (Get-Content $script:Filepath1).replace($script:server_LootAbundance_line.Line,$script:server_LootAbundance_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_LootRespawnDays = Read-Host "LootRespawnDays (·çÆÃ ÈÄ ¸®½ºÆùµÇ´Âµ¥ ¼Ò¿äµÇ´Â ½Ã°£. ±âº»°ª: 30) "
+$script:server_LootRespawnDays = Read-Host "LootRespawnDays (ë£¨íŒ… í›„ ë¦¬ìŠ¤í°ë˜ëŠ”ë° ì†Œìš”ë˜ëŠ” ì‹œê°„. ê¸°ë³¸ê°’: 30) "
 $script:server_LootRespawnDays_line = Select-String "LootRespawnDays" $script:Filepath1
 $script:server_LootRespawnDays_value = '<property name="LootRespawnDays"				value="' + $script:server_LootRespawnDays + '" />'
 (Get-Content $script:Filepath1).replace($script:server_LootRespawnDays_line.Line,$script:server_LootRespawnDays_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_AirDropFrequency = Read-Host "AirDropFrequency (¿¡¾îµå·Ó ºóµµ. ´ÜÀ§: ½Ã°£, ±âº»°ª: 72, 0ÀÌ¸é ¿¡¾îµå·Ó ¾øÀ½) "
+$script:server_AirDropFrequency = Read-Host "AirDropFrequency (ì—ì–´ë“œë¡­ ë¹ˆë„. ë‹¨ìœ„: ì‹œê°„, ê¸°ë³¸ê°’: 72, 0ì´ë©´ ì—ì–´ë“œë¡­ ì—†ìŒ) "
 $script:server_AirDropFrequency_line = Select-String "AirDropFrequency" $script:Filepath1
 $script:server_AirDropFrequency_value = '<property name="AirDropFrequency"				value="' + $script:server_AirDropFrequency + '" />'
 (Get-Content $script:Filepath1).replace($script:server_AirDropFrequency_line.Line,$script:server_AirDropFrequency_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_AirDropMarker = Read-Host "AirDropMarker (¿¡¾îµå·Ó ¸¶Ä¿ Ç¥½Ã¿©ºÎ. È°¼ºÈ­: true, ºñÈ°¼ºÈ­: false, ±âº»°ª: false) "
+$script:server_AirDropMarker = Read-Host "AirDropMarker (ì—ì–´ë“œë¡­ ë§ˆì»¤ í‘œì‹œì—¬ë¶€. í™œì„±í™”: true, ë¹„í™œì„±í™”: false, ê¸°ë³¸ê°’: false) "
 $script:server_AirDropMarker_line = Select-String "AirDropMarker" $script:Filepath1
 $script:server_AirDropMarker_value = '<property name="AirDropMarker"					value="' + $script:server_AirDropMarker + '" />'
 (Get-Content $script:Filepath1).replace($script:server_AirDropMarker_line.Line,$script:server_AirDropMarker_value) | Set-Content $script:Filepath1
 Write-Host ""
 
-$script:server_PartySharedKillRange = Read-Host "PartySharedKillRange (ÆÄÆ¼¿ø °æÇèÄ¡ °øÀ¯ °Å¸®. ´ÜÀ§: M, ±âº»°ª: 100) "
+$script:server_PartySharedKillRange = Read-Host "PartySharedKillRange (íŒŒí‹°ì› ê²½í—˜ì¹˜ ê³µìœ  ê±°ë¦¬. ë‹¨ìœ„: M, ê¸°ë³¸ê°’: 100) "
 $script:server_PartySharedKillRange_line = Select-String "PartySharedKillRange" $script:Filepath1
 $script:server_PartySharedKillRange_value = '<property name="PartySharedKillRange"			value="' + $script:server_PartySharedKillRange + '" />'
 (Get-Content $script:Filepath1).replace($script:server_PartySharedKillRange_line.Line,$script:server_PartySharedKillRange_value) | Set-Content $script:Filepath1
 Write-Host ""
-$script:server_PlayerKillingMode = Read-Host "PlayerKillingMode (PK¿É¼Ç. PK¾øÀ½: 0, ÆÄÆ¼¿ø³¢¸®¸¸: 1, ¿ÜºÎÀÎ¸¸: 2, Á¦ÇÑ¾øÀ½(¸ğµÎ): 3, ±âº»°ª: 3) "
+$script:server_PlayerKillingMode = Read-Host "PlayerKillingMode (PKì˜µì…˜. PKì—†ìŒ: 0, íŒŒí‹°ì›ë¼ë¦¬ë§Œ: 1, ì™¸ë¶€ì¸ë§Œ: 2, ì œí•œì—†ìŒ(ëª¨ë‘): 3, ê¸°ë³¸ê°’: 3) "
 $script:server_PlayerKillingMode_line = Select-String "PlayerKillingMode" $script:Filepath1
 $script:server_PlayerKillingMode_value = '<property name="PlayerKillingMode"				value="' + $script:server_PlayerKillingMode + '" />'
 (Get-Content $script:Filepath1).replace($script:server_PlayerKillingMode_line.Line,$script:server_PlayerKillingMode_value) | Set-Content $script:Filepath1
@@ -351,12 +351,10 @@ Write-Host ""
 
 
  function Install_done {
-#$script:server_start_bat = $script:install + "\7DTD.bat"
-#wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/workshoplist.txt -outfile $script:server_start_bat
-Write-Host "¼­¹ö ½ÇÇàÀº ¼­¹ö ¼³Ä¡ Æú´õ¿¡ °¡¸é " -Foregroundcolor "Green" -NoNewline
-Write-Host "7DTD.bat" -Foregroundcolor "Red" -NoNewline
-Write-Host "ÀÌ ÀÖ½À´Ï´Ù ÇØ´ç ÆÄÀÏÀ» ´õºíÅ¬¸¯ÇÏ¿© ½ÇÇàÇÕ´Ï´Ù." -Foregroundcolor "Green"
-Read-Host '¼³Á¤ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. ¿£ÅÍ¸¦ ´­·¯ ¼³Ä¡¸¦ Á¾·áÇÕ´Ï´Ù'
+Write-Host "ì„œë²„ ì‹¤í–‰ì€ ì„œë²„ ì„¤ì¹˜ í´ë”ì— ê°€ë©´ " -Foregroundcolor "Green" -NoNewline
+Write-Host "startdedicated.bat" -Foregroundcolor "Red" -NoNewline
+Write-Host "ì´ ìˆìŠµë‹ˆë‹¤ í•´ë‹¹ íŒŒì¼ì„ ë”ë¸”í´ë¦­í•˜ì—¬ ì‹¤í–‰í•©ë‹ˆë‹¤." -Foregroundcolor "Green"
+Read-Host 'ì„¤ì •ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. ì—”í„°ë¥¼ ëˆŒëŸ¬ ì„¤ì¹˜ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤'
  }
 
 function open_appdata {
