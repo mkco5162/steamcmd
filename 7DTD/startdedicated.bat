@@ -52,7 +52,7 @@ Set LOGTIMESTAMP=__%_yyyy%-%_mm%-%_dd%__%_hour%-%_minute%-%_second%
 
 echo|set /p="251570" > steam_appid.txt
 
-start 7DaysToDieServer -logfile 7DaysToDieServer_Data\output_log%LOGTIMESTAMP%.txt -quit -batchmode -nographics -configfile=serverconfig.xml -dedicated
+start .\7DaysToDieServer -logfile 7DaysToDieServer_Data\output_log%LOGTIMESTAMP%.txt -quit -batchmode -nographics -configfile=serverconfig.xml -dedicated
 
 
 echo Starting server ...
