@@ -6,7 +6,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.3.2                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.3.3                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2021.05.20  " -Foregroundcolor "Red" -NoNewline
