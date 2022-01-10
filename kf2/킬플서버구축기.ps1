@@ -1,4 +1,4 @@
- function Info {
+﻿ function Info {
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
@@ -297,7 +297,7 @@ $script:runportmapper = $script:steamcmd + "\portmapper-2.2.1.jar"
 $script:get_workshoplist = $script:steamcmd + "\workshoplist.txt"
 wget https://github.com/mkco5162/steamcmd/raw/main/steamcmd.exe -outfile $script:runcmd
 wget https://github.com/mkco5162/steamcmd/raw/main/portmapper-2.2.1.jar -outfile $script:runportmapper
-wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/workshoplist.txt -outfile $script:get_workshoplist
+wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshoplist.txt -outfile $script:get_workshoplist
 #Invoke-item $steamcmd
 Install_What
 Start-Sleep -s 3
