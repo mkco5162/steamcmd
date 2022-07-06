@@ -1,4 +1,8 @@
-﻿ function Info {
+﻿ #config설정
+ $portmapper_select = 2 #포트포워딩 라이브러리 설정(1~3) 기본값:2
+ #config 설정 종료 
+ 
+ function Info {
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "#######################################################" -Foregroundcolor "Green"
     Write-Host "##########                                   ##########" -Foregroundcolor "Green"
@@ -6,10 +10,10 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.3.3                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.4.2                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  창작마당 DB Update : 2021.05.20  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  Make By. ㅇㅇ(1.239)             " -Foregroundcolor "Red" -NoNewline
@@ -40,6 +44,7 @@
         '1' {
             Clear-Host
             Write-Host "1. 서버설치" -Foregroundcolor "Green"
+            Install_location
             Install_start
             Config_setting
             portmapping
@@ -60,6 +65,7 @@
         '3' {
             Clear-Host
             Write-Host "3. 포트포워딩 (uPNP)" -Foregroundcolor "Green"
+            Install_location
             portmapping
         }
         '4' {
@@ -89,10 +95,9 @@
  }
 
  function Check_Java_Installed {
-    $check_java_install = & cmd /c "java -version 2>&1"
-     if ($check_java_install | Select-String -Pattern "java version `"11.*`"." -Quiet){
+    $check_java_install = Get-Command java | Select-Object -ExpandProperty Version
+     if ($check_java_install.Major -ge 11){
          Write-Host "자바11 설치가 확인되었습니다." -Foregroundcolor "Green"
-         Install_start
      }
      else{
         Clear-Host
@@ -102,7 +107,6 @@
         Write-Host "force install" -Foregroundcolor "Green"
         $java_force_install = Read-Host "답 "
         if ($java_force_install -eq "force install") {
-            Install_start
         }
         else {
             Install_close
@@ -120,7 +124,7 @@
     [System.Windows.Forms.Application]::EnableVisualStyles()
     $browse = New-Object System.Windows.Forms.FolderBrowserDialog
     $browse.SelectedPath = "C:\"
-    $browse.ShowNewFolderButton = $false
+    $browse.ShowNewFolderButton = $true
     $browse.Description = "Select a directory"
     $loop = $true
     while($loop)
@@ -144,13 +148,32 @@
     $browse.Dispose()
 }
  function Start_Portmapper {
- $myip = ((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
+ $myip = (Get-NetIPAddress | Where-Object {$_.AddressState -eq "Preferred" -and $_.ValidLifetime -lt "24:00:00"}).IPAddress
  java -jar $runportmapper -add -externalPort $server_gameport -internalPort $server_gameport -ip $myip -protocol udp
  java -jar $runportmapper -add -externalPort $server_queryport -internalPort $server_queryport -ip $myip -protocol udp
  java -jar $runportmapper -add -externalPort $server_webadminport -internalPort $server_webadminport -ip $myip -protocol tcp
  java -jar $runportmapper -add -externalPort $server_steamport -internalPort $server_steamport -ip $myip -protocol udp
  java -jar $runportmapper -add -externalPort $server_ntpport -internalPort $server_ntpport -ip $myip -protocol udp
  }
+
+ function Start_Portmapper_weupnp {
+ $myip = (Get-NetIPAddress | Where-Object {$_.AddressState -eq "Preferred" -and $_.ValidLifetime -lt "24:00:00"}).IPAddress
+ java -jar $runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -add -externalPort $server_gameport -internalPort $server_gameport -ip $myip -protocol udp
+ java -jar $runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -add -externalPort $server_queryport -internalPort $server_queryport -ip $myip -protocol udp
+ java -jar $runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -add -externalPort $server_webadminport -internalPort $server_webadminport -ip $myip -protocol tcp
+ java -jar $runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -add -externalPort $server_steamport -internalPort $server_steamport -ip $myip -protocol udp
+ java -jar $runportmapper -lib org.chris.portmapper.router.weupnp.WeUPnPRouterFactory -add -externalPort $server_ntpport -internalPort $server_ntpport -ip $myip -protocol udp
+ }
+
+ function Start_Portmapper_SBBI {
+ $myip = (Get-NetIPAddress | Where-Object {$_.AddressState -eq "Preferred" -and $_.ValidLifetime -lt "24:00:00"}).IPAddress
+ java -jar $runportmapper -lib org.chris.portmapper.router.sbbi.SBBIRouterFactory -add -externalPort $server_gameport -internalPort $server_gameport -ip $myip -protocol udp
+ java -jar $runportmapper -lib org.chris.portmapper.router.sbbi.SBBIRouterFactory -add -externalPort $server_queryport -internalPort $server_queryport -ip $myip -protocol udp
+ java -jar $runportmapper -lib org.chris.portmapper.router.sbbi.SBBIRouterFactory -add -externalPort $server_webadminport -internalPort $server_webadminport -ip $myip -protocol tcp
+ java -jar $runportmapper -lib org.chris.portmapper.router.sbbi.SBBIRouterFactory -add -externalPort $server_steamport -internalPort $server_steamport -ip $myip -protocol udp
+ java -jar $runportmapper -lib org.chris.portmapper.router.sbbi.SBBIRouterFactory -add -externalPort $server_ntpport -internalPort $server_ntpport -ip $myip -protocol udp
+ }
+
 
 function portmapping {
     Write-Host "게임 포트 : 서버 접속시 이용하는 포트 " -Foregroundcolor "Green" -NoNewline
@@ -180,7 +203,7 @@ function portmapping {
     Write-Host "(기본값 : 8888)" -Foregroundcolor "Red"
     $script:server_webadminport = Read-Host "웹어드민 포트 입력 "
     Write-Host ""
-    if (0 -eq $server_webadminport)
+    if (0 -eq $script:server_webadminport)
     {
         Write-Host "웹어드민 포트가 0 입니다. 기본값인 8888으로 지정합니다" -Foregroundcolor "Green"
         $script:server_webadminport = 8888
@@ -194,7 +217,22 @@ function portmapping {
     $script:portmapping = Read-Host "포트포워딩을 자동으로 진행 하시겠습니까? (Y/N) "
     if ("Y" -eq $portmapping) {
         Check_Java_Installed
-        Start_Portmapper
+        if (1 -eq $portmapper_select) {
+            Write-Host "Cling 라이브러리로 포트포워딩 시도합니다" -Foregroundcolor "Green"
+            Start_Portmapper
+            }
+        if (2 -eq $portmapper_select) {
+            Write-Host "weupnp 라이브러리로 포트포워딩 시도합니다" -Foregroundcolor "Green"
+            Start_Portmapper_weupnp
+            }
+        if (3 -eq $portmapper_select) {
+            Write-Host "SBBI 라이브러리로 포트포워딩 시도합니다" -Foregroundcolor "Green"
+            Start_Portmapper_SBBI
+            }
+        if (4 -eq $portmapper_select) {
+            Write-Host "SBBI 라이브러리로 포트포워딩 시도합니다" -Foregroundcolor "Green"
+            Start_Portmapper_Test
+            }
         #portmapper 실행 후 지정된 포트 포트포워딩
     }
     elseif ("N" -eq $portmapping) {
@@ -258,8 +296,8 @@ function Install_What {
     $script:runcmd = $script:steamcmd + "\steamcmd.exe"
     $script:cmdscript = $script:steamcmd + "\Update_KF2.txt"
     $script:cmdscript_beta = $script:steamcmd + "\Update_KF2_Beta.txt"
-    Set-Content $script:cmdscript "login anonymous`nforce_install_dir $script:install`napp_update 232130 validate`nexit"
-    Set-Content $script:cmdscript_beta "login anonymous`nforce_install_dir $script:install`napp_update 232130 -beta preview validate`nexit"
+    Set-Content $script:cmdscript "force_install_dir $script:install`nlogin anonymous`napp_update 232130 validate`nexit"
+    Set-Content $script:cmdscript_beta "force_install_dir $script:install`nlogin anonymous`napp_update 232130 -beta preview validate`nexit"
     $script:creatbat = $script:steamcmd + "\Update.bat"
     $script:creatbat_beta = $script:steamcmd + "\Update_beta.bat"
     $script:battext = $script:runcmd + " +runscript Update_KF2.txt"
@@ -287,7 +325,8 @@ function Install_What {
         Install_What
     }
 }
- function Install_start {
+
+function Install_location {
 Write-Host "킬링플로어2 데디케이트 서버를 설치할 폴더를 지정해주세요" -Foregroundcolor "Green"
 $script:install = Find-Folders
 $script:steamcmd = $script:install + "\cmd"
@@ -295,6 +334,9 @@ mkdir $script:steamcmd
 $script:runcmd = $script:steamcmd + "\steamcmd.exe"
 $script:runportmapper = $script:steamcmd + "\portmapper-2.2.1.jar"
 $script:get_workshoplist = $script:steamcmd + "\workshoplist.txt"
+}
+
+ function Install_start {
 wget https://github.com/mkco5162/steamcmd/raw/main/steamcmd.exe -outfile $script:runcmd
 wget https://github.com/mkco5162/steamcmd/raw/main/portmapper-2.2.1.jar -outfile $script:runportmapper
 wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshoplist.txt -outfile $script:get_workshoplist
@@ -312,38 +354,6 @@ Stop-Process -Name "kfserver"
  }
 
  function Config_setting {
-Write-Host "게임 포트 : 서버 접속시 이용하는 포트 " -Foregroundcolor "Green" -NoNewline
-Write-Host "(기본값 : 7777)" -Foregroundcolor "Red"
-$script:server_gameport = Read-Host "게임 포트 입력 "
-Write-Host ""
-if (0 -eq $script:server_gameport)
-{
-    Write-Host "게임포트가 0 입니다. 기본값인 7777로 지정합니다" -Foregroundcolor "Green"
-    $script:server_gameport = 7777
-}
-Write-Host ""
-Write-Host "쿼리 포트 : 스팀과 통신하는데 사용하는 포트 " -Foregroundcolor "Green" -NoNewline
-Write-Host "(기본값 : 27015)" -Foregroundcolor "Red"
-$script:server_queryport = Read-Host "쿼리 포트 입력 "
-Write-Host ""
-if (0 -eq $script:server_queryport)
-{
-    Write-Host "쿼리 포트가 0 입니다. 기본값인 27015로 지정합니다" -Foregroundcolor "Green"
-    $script:server_queryport = 27015
-}
-Write-Host ""
-Write-Host "기본값인 8080번 포트가 " -Foregroundcolor "Green" -NoNewline
-Write-Host "uPNP사용 불가" -Foregroundcolor "Red" -NoNewline
-Write-Host "하여 8888 사용을 권장합니다" -Foregroundcolor "Green"
-Write-Host "웹어드민 포트 : 웹어드민 접속시 이용하는 포트 " -Foregroundcolor "Green" -NoNewline
-Write-Host "(기본값 : 8888)" -Foregroundcolor "Red"
-$script:server_webadminport = Read-Host "웹어드민 포트 입력 "
-Write-Host ""
-if (0 -eq $script:server_webadminport)
-{
-    Write-Host "웹어드민 포트가 0 입니다. 기본값인 8888으로 지정합니다" -Foregroundcolor "Green"
-    $script:server_webadminport = 8888
-}
 $script:Filepath1 = $install + "\KFGame\Config\PCServer-KFEngine.ini"
 $script:steamworkshop = Get-Content $script:Filepath1
  if ($steamworkshop | Select-String -Pattern "DownloadManagers=OnlineSubsystemSteamworks" -Quiet){
@@ -430,7 +440,7 @@ Set-Content $script:server_start_bat $script:run_server_script
 Write-Host "서버 실행은 서버 설치 폴더에 가면 " -Foregroundcolor "Green" -NoNewline
 Write-Host "서버실행기.bat" -Foregroundcolor "Red" -NoNewline
 Write-Host "이 있습니다 해당 파일을 더블클릭하여 실행합니다." -Foregroundcolor "Green"
-Read-Host -Prompt "설정이 완료되었습니다. 엔터를 눌러 설치를 종료합니다" -Foregroundcolor "Green"
+(Write-Host "설정이 완료되었습니다. 엔터를 눌러 설치를 종료합니다" -Foregroundcolor "Green" -NoNewline) + $(Read-Host)
  }
 
 function make_multi_server {
