@@ -10,7 +10,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.5.5                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.5.6                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
@@ -344,8 +344,6 @@ if (0 -eq $script:get_map)
         $custom_map_brewedpc = $script:install + "\KFGame\BrewedPC\Maps\CustomMaps"
         mkdir $custom_map_brewedpc -erroraction "silentlycontinue"
         wget ("http://webserver.kf2poi.ddns.net/kf2workshop/"+$script:what_map) -OutFile ($custom_map_brewedpc+"\"+$script:what_map)
-        $custom_map_brewedpc
-        pause
         add_custom_maps_redirect
     }
     else
