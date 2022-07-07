@@ -10,7 +10,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.5.6                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.5.7                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
@@ -424,11 +424,15 @@ $script:steamworkshop = Get-Content $script:Filepath1
  else {
     (Get-Content $script:Filepath1).replace("[IpDrv.TcpNetDriver]","[IpDrv.TcpNetDriver]`nDownloadManagers=OnlineSubsystemSteamworks.SteamWorkshopDownload") | Set-Content $script:Filepath1
  }
-$script:steamworkshop = Get-Content $script:Filepath1
  if ($script:steamworkshop | Select-String -Pattern "ServerSubscribedWorkshopItems=" -Quiet){
  }
  else {
     Add-Content $script:Filepath1 -Value "[OnlineSubsystemSteamworks.KFWorkshopSteamworks]`nServerSubscribedWorkshopItems="
+ }
+ if ($steamworkshop | Select-String -Pattern "RedirectToURL=http://webserver.kf2poi.ddns.net/kf2workshop/" -Quiet){
+ }
+ else {
+    (Get-Content $script:Filepath1).replace("RedirectToURL=","RedirectToURL=http://webserver.kf2poi.ddns.net/kf2workshop/") | Set-Content $script:Filepath1
  }
 (Get-Content $script:Filepath1).replace("bUsedForTakeover=TRUE","bUsedForTakeover=FALSE") | Set-Content $script:Filepath1
 $script:Filepath2 = $script:install + "\KFGame\Config\KFWeb.ini"
