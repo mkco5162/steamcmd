@@ -10,7 +10,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.4.2                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.5.5                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
@@ -48,7 +48,7 @@
             Install_start
             Config_setting
             portmapping
-            add_custom_maps
+            how_add_custom_maps
             Install_done
         }
         '2' {
@@ -59,7 +59,7 @@
             $script:steamcmd = $script:install + "\cmd"
             $script:runcmd = $script:steamcmd + "\steamcmd.exe"
             Config_setting
-	        add_custom_maps
+	        how_add_custom_maps
             Install_done
         }
         '3' {
@@ -229,10 +229,6 @@ function portmapping {
             Write-Host "SBBI 라이브러리로 포트포워딩 시도합니다" -Foregroundcolor "Green"
             Start_Portmapper_SBBI
             }
-        if (4 -eq $portmapper_select) {
-            Write-Host "SBBI 라이브러리로 포트포워딩 시도합니다" -Foregroundcolor "Green"
-            Start_Portmapper_Test
-            }
         #portmapper 실행 후 지정된 포트 포트포워딩
     }
     elseif ("N" -eq $portmapping) {
@@ -260,37 +256,106 @@ function portmapping {
     }
 }
 
+function how_add_custom_maps {
+Clear-Host
+Write-Host "커스텀맵을 설치할 방법을 선택 해주세요" -ForegroundColor "green"
+Write-Host
+Write-Host "1: 스팀 창작마당 이용" -ForegroundColor "green"
+Write-Host "2: 리다이렉트 서버 이용" -ForegroundColor "green"
+Write-Host
+$how_add = $(Write-Host "숫자" -ForegroundColor "Red" -NoNewLine; Write-Host "를 입력해주세요: " -ForegroundColor "green" -NoNewLine) + $(Read-Host)
+if ($how_add -eq 1) {
+        add_custom_maps
+    }
+    elseif ($how_add -eq 2) {
+        add_custom_maps_redirect
+    }
+    else {
+        how_add_custom_maps
+    }
+
+}
+
 function add_custom_maps {
 Clear-Host
 Write-Host "지금부터 커스텀맵 설정을 시작합니다" -Foregroundcolor "Green"
 Write-Host "커스텀맵 등록을 종료하려면 입력 값 없이 엔터를 눌러주시기 바랍니다" -Foregroundcolor "Green"
+Write-Host ""
+Write-Host "추가한 맵의 Config는 " -Foregroundcolor "Green" -NoNewline; Write-Host $script:install -Foregroundcolor "Red" -NoNewline; Write-Host "\KFGame\Config" -Foregroundcolor "Red" -NoNewline;
+Write-Host "에 있는 원본 Config만 변경됩니다 멀티서버 사용시 해당 파일 복사하여 사용 부탁드립니다" -Foregroundcolor "Green" -NoNewline;
+Write-Host ""
 $script:get_map = Read-Host "추가하실 창작마당 맵 번호를 입력해 주십시오 "
 $script:workshoplistfile = $script:steamcmd + "\workshoplist.txt"
 $script:workshoplist = Get-Content $script:workshoplistfile
 if (0 -eq $script:get_map)
 {
-Write-Host "맵 번호 입력값이 없습니다. 커스텀맵 등록을 종료합니다" -Foregroundcolor "Green"
+        Write-Host "맵 번호 입력값이 없습니다. 커스텀맵 등록을 종료합니다" -Foregroundcolor "Green"
+    }
+    elseif ($workshoplist | Select-String -Pattern $script:get_map -Quiet)
+    {
+        $script:mapconfigline = Select-String -Path $script:workshoplistfile -Pattern $script:get_map
+        $script:mapconfig = Get-Content -Path $script:workshoplistfile
+        $script:configline1 = $mapconfigline.LineNumber
+        $script:configline2 = $mapconfigline.LineNumber+1
+        $script:custom_map_config = $script:mapconfig[$script:configline1,$script:configline2]
+        Add-Content $script:Filepath3 -Value $script:custom_map_config
+        Add-Content $script:Filepath1 -Value "ServerSubscribedWorkshopItems=$script:get_map"
+        $script:what_map = $script:mapconfig[$configline2]
+        Write-Host $script:what_map" 이 추가되었습니다" -Foregroundcolor "Green"
+        add_custom_maps
+    }
+    else
+    {
+        Write-Host "데이터베이스에 존재하지 않는 맵 번호입니다. 다시 입력해주시기 바랍니다" -Foregroundcolor "Green"
+        Write-Host "만일 정상적인 창작마당 ID임에도 불구하고 등록이 안될경우 DB업데이트 요청바랍니다" -Foregroundcolor "Green"
+        add_custom_maps
+    }
 }
-elseif ($workshoplist | Select-String -Pattern $script:get_map -Quiet)
+
+function add_custom_maps_redirect {
+Clear-Host
+Write-Host "지금부터 리다이렉트 서버 커스텀맵 설정을 시작합니다" -Foregroundcolor "Green"
+Write-Host "커스텀맵 등록을 종료하려면 입력 값 없이 엔터를 눌러주시기 바랍니다" -Foregroundcolor "Green"
+Write-Host ""
+Write-Host "추가한 맵의 Config는 " -Foregroundcolor "Green" -NoNewline; Write-Host $script:install -Foregroundcolor "Red" -NoNewline; Write-Host "\KFGame\Config" -Foregroundcolor "Red" -NoNewline;
+Write-Host "에 있는 원본 Config만 변경됩니다 멀티서버 사용시 해당 파일 복사하여 사용 부탁드립니다" -Foregroundcolor "Green" -NoNewline;
+Write-Host ""
+$script:get_map = Read-Host "추가하실 창작마당 맵 번호를 입력해 주십시오 "
+$script:workshoplistfile = $script:steamcmd + "\workshoplist.txt"
+$script:workshoplist = Get-Content $script:workshoplistfile
+if (0 -eq $script:get_map)
 {
-    $script:mapconfigline = Select-String -Path $script:workshoplistfile -Pattern $script:get_map
-    $script:mapconfig = Get-Content -Path $script:workshoplistfile
-    $script:configline1 = $mapconfigline.LineNumber
-    $script:configline2 = $mapconfigline.LineNumber+1
-    $script:custom_map_config = $script:mapconfig[$script:configline1,$script:configline2]
-    Add-Content $script:Filepath3 -Value $script:custom_map_config
-    Add-Content $script:Filepath1 -Value "ServerSubscribedWorkshopItems=$script:get_map"
-    $script:what_map = $script:mapconfig[$configline2]
-    Write-Host $script:what_map" 이 추가되었습니다" -Foregroundcolor "Green"
-    add_custom_maps
+        Write-Host "맵 번호 입력값이 없습니다. 커스텀맵 등록을 종료합니다" -Foregroundcolor "Green"
+    }
+    elseif ($workshoplist | Select-String -Pattern $script:get_map -Quiet)
+    {
+        $script:mapconfigline = Select-String -Path $script:workshoplistfile -Pattern $script:get_map
+        $script:mapconfig = Get-Content -Path $script:workshoplistfile
+        $script:configline1 = $mapconfigline.LineNumber
+        $script:configline2 = $mapconfigline.LineNumber+1
+        $script:custom_map_config = $script:mapconfig[$script:configline1,$script:configline2]
+        Add-Content $script:Filepath3 -Value $script:custom_map_config
+        #Add-Content $script:Filepath1 -Value "ServerSubscribedWorkshopItems=$script:get_map"
+        $script:what_map = $script:mapconfig[$configline2]
+        $script:what_map = $script:what_map.TrimStart("MapName=")
+        Write-Host $script:what_map" 이 추가되었습니다" -Foregroundcolor "Green"
+        $script:what_map = $script:what_map + ".kfm"
+        Write-Host $script:what_map" 을 다운로드 합니다" -Foregroundcolor "Green"
+        $custom_map_brewedpc = $script:install + "\KFGame\BrewedPC\Maps\CustomMaps"
+        mkdir $custom_map_brewedpc -erroraction "silentlycontinue"
+        wget ("http://webserver.kf2poi.ddns.net/kf2workshop/"+$script:what_map) -OutFile ($custom_map_brewedpc+"\"+$script:what_map)
+        $custom_map_brewedpc
+        pause
+        add_custom_maps_redirect
+    }
+    else
+    {
+        Write-Host "데이터베이스에 존재하지 않는 맵 번호입니다. 다시 입력해주시기 바랍니다" -Foregroundcolor "Green"
+        Write-Host "만일 정상적인 창작마당 ID임에도 불구하고 등록이 안될경우 DB업데이트 요청바랍니다" -Foregroundcolor "Green"
+        add_custom_maps_redirect
+    }
 }
-else
-{
-Write-Host "데이터베이스에 존재하지 않는 맵 번호입니다. 다시 입력해주시기 바랍니다" -Foregroundcolor "Green"
-Write-Host "만일 정상적인 창작마당 ID임에도 불구하고 등록이 안될경우 DB업데이트 요청바랍니다" -Foregroundcolor "Green"
-add_custom_maps
-}
-}
+
 function Install_What {
     $script:steamcmd = $script:install + "\cmd"
     $script:runcmd = $script:steamcmd + "\steamcmd.exe"
@@ -385,9 +450,12 @@ Write-Host ""
 $script:server_webadminpassword = Read-Host "웹어드민에 사용할 암호 입력 "
 Write-Host ""
 $script:server_difficulty = Read-Host "서버 난이도 설정 (보통:0, 어려움:1, 자살행위:2, 생지옥:3) "
+if (0 -eq $script:server_difficulty)
+{
+    Write-Host "난이도가 0입니다. 보통으로 설정합니다" -Foregroundcolor "Green"
+}
 Write-Host ""
 $script:server_gamemode = Read-Host "게임모드 설정 (VS(PvP):1, 서바이벌(Survival):2, 무한(Endless):3, 주간(Weekly):4) "
-Write-Host ""
 if (0 -eq $script:server_gamemode)
 {
     Write-Host "게임모드가 0입니다. 서바이벌 모드로 설정합니다" -Foregroundcolor "Green"
@@ -409,7 +477,12 @@ if (4 -eq $script:server_gamemode)
 {
     $script:server_gamemode = "?Game=KFGameContent.KFGameInfo_WeeklySurvival"
 }
+Write-Host ""
 $script:server_length = Read-Host "서버 웨이브 길이 (짧음(4웨이브):0, 중간(7웨이브):1, 김(10웨이브):2) "
+if (0 -eq $script:server_length)
+{
+    Write-Host "웨이브 길이가 0입니다. 짧음(4웨이브)로 설정합니다" -Foregroundcolor "Green"
+}
 $script:server_length = "GameLength=" + $script:server_length
 $script:server_length_line = Select-String "GameLength=" $script:Filepath3
 (Get-Content $script:Filepath3).replace($script:server_length_line.Line,$script:server_length) | Set-Content $script:Filepath3
