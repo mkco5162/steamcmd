@@ -10,7 +10,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 1.5.7                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 1.6.1                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
@@ -439,11 +439,12 @@ $script:Filepath2 = $script:install + "\KFGame\Config\KFWeb.ini"
 (Get-Content $script:Filepath2).replace("MaxValueLength=4096","MaxValueLength=999999") | Set-Content $script:Filepath2
 (Get-Content $script:Filepath2).replace("MaxLineLength=4096","MaxLineLength=999999") | Set-Content $script:Filepath2
 (Get-Content $script:Filepath2).replace("bEnabled=false","bEnabled=true") | Set-Content $script:Filepath2
+$script:Filepath3 = $script:install + "\KFGame\Config\PCServer-KFGame.ini"
+(Get-Content $script:Filepath3).replace("bDisableTeamCollision=false","bDisableTeamCollision=true") | Set-Content $script:Filepath3
 Write-Host ""
 $script:input_servername = Read-Host "서버 이름을 지정해 주십시오"
 Write-Host ""
 $script:Set_servername = "ServerName=" + $script:input_servername
-$script:Filepath3 = $script:install + "\KFGame\Config\PCServer-KFGame.ini"
 (Get-Content $script:Filepath3).replace("ServerName=Killing Floor 2 Server",$script:Set_servername) | Set-Content $script:Filepath3
 Write-Host ""
 Write-Host "지금부터 게임 세부설정을 진행합니다." -Foregroundcolor "Green"
