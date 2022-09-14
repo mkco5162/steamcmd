@@ -28,11 +28,13 @@
     }
 
     .servername {
-        padding: 5px 10px;
-        padding-right: 20px;
+        padding: 5px 10px; 
+        padding-right: 10em;
         color: #80d8e2;
-        background-image: url("images/border-heading.png");
-        background-size: cover;
+        border: 1px solid transparent;
+        border-width: 0px 0px 1px 15px;
+        border-image: url("images/border-heading.png") 13 1 stretch;
+        border-image-slice: 0 0 1 15 fill;
         margin: 5px;
         margin-bottom: 15px;
         font-size: x-large;
