@@ -13,7 +13,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 2.0.3                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 2.0.4                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
@@ -477,9 +477,9 @@ Write-Host "지금부터 게임 세부설정을 진행합니다." -Foregroundcol
 Write-Host "기본값으로 사용하시려면 그냥 엔터를 눌러주시기 바랍니다." -Foregroundcolor "Green"
 Write-Host ""
 $script:server_webadminpassword = Read-Host "웹어드민에 사용할 암호 입력 "
-$script:server_webadminpassword = "AdminPassword=" + $script:server_webadminpassword
+$script:server_webadminpassword_config = "AdminPassword=" + $script:server_webadminpassword
 $script:server_webadminpassword_line = Select-String "AdminPassword=" $script:Filepath3
-(Get-Content $script:Filepath3).replace($script:server_webadminpassword_line.Line,$script:server_webadminpassword) | Set-Content $script:Filepath3
+(Get-Content $script:Filepath3).replace($script:server_webadminpassword_line.Line,$script:server_webadminpassword_config) | Set-Content $script:Filepath3
 Write-Host ""
 $script:server_difficulty = Read-Host "서버 난이도 설정 (보통:0, 어려움:1, 자살행위:2, 생지옥:3) "
 if (0 -eq $script:server_difficulty)
