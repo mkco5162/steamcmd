@@ -13,7 +13,7 @@
     Write-Host "  킬링플로어2 서버 자동구축기      " -Foregroundcolor "Red" -NoNewline
     Write-host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
-    Write-Host "  version : 2.0.1                  " -Foregroundcolor "Red" -NoNewline
+    Write-Host "  version : 2.0.3                  " -Foregroundcolor "Red" -NoNewline
     Write-Host "##########" -Foregroundcolor "Green"
     Write-Host "##########" -Foregroundcolor "Green" -NoNewline
     Write-Host "  창작마당 DB Update : 2022.07.07  " -Foregroundcolor "Red" -NoNewline
@@ -63,13 +63,6 @@
             $script:install = Find-Folders
             $script:steamcmd = $script:install + "\cmd"
             $script:runcmd = $script:steamcmd + "\steamcmd.exe"
-            $script:workshop_patch = $script:steamcmd + "\workshop_patch.zip"
-            $script:workshop_api_delete = $script:steamcmd + "\workshop_api_delete.bat"
-            $script:steamdll1 = $script:install + "\Binaries\Win64\steamclient64.dll"
-            $script:steamdll2 = $script:install + "\Binaries\Win64\tier0_s64.dll"
-            $script:steamdll3 = $script:install + "\Binaries\Win64\vstdlib_s64.dll"
-            wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshop_patch.zip -outfile $script:workshop_patch
-            wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshop_api_delete.bat -OutFile $script:workshop_api_delete
             Config_setting
             portmapping
 	        #how_add_custom_maps
@@ -262,6 +255,7 @@ function portmapping {
         Write-Host "NTP 포트         123          UDP" -Foregroundcolor "Cyan"
         Write-Host ""
         Write-Host ""
+        pause
     }
     else {
         Clear-Host
@@ -403,16 +397,6 @@ function Install_What {
         Write-Host "다시 선택해주시기 바랍니다" -Foregroundcolor "Red"
         Install_What
     }
-    $script:workshop_patch = $script:steamcmd + "\workshop_patch.zip"
-    $script:workshop_api_delete = $script:steamcmd + "\workshop_api_delete.bat"
-    $script:steamdll1 = $script:install + "\Binaries\Win64\steamclient64.dll"
-    $script:steamdll2 = $script:install + "\Binaries\Win64\tier0_s64.dll"
-    $script:steamdll3 = $script:install + "\Binaries\Win64\vstdlib_s64.dll"
-    wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshop_patch.zip -outfile $script:workshop_patch
-    wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshop_api_delete.bat -OutFile $script:workshop_api_delete
-    cd $script:install
-    Invoke-Expression -Command "$script:workshop_api_delete"
-    Expand-Archive -LiteralPath "$script:workshop_patch" -DestinationPath $script:install -Force
 }
 
 function Install_location {
@@ -448,6 +432,13 @@ Stop-Process -Name "kfserver"
  }
 
  function Config_setting {
+$script:workshop_patch = $script:steamcmd + "\workshop_patch.zip"
+$script:workshop_api_delete = $script:steamcmd + "\workshop_api_delete.bat"
+$script:steamdll1 = $script:install + "\Binaries\Win64\steamclient64.dll"
+$script:steamdll2 = $script:install + "\Binaries\Win64\tier0_s64.dll"
+$script:steamdll3 = $script:install + "\Binaries\Win64\vstdlib_s64.dll"
+wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshop_patch.zip -outfile $script:workshop_patch
+wget https://raw.githubusercontent.com/mkco5162/steamcmd/main/kf2/workshop_api_delete.bat -OutFile $script:workshop_api_delete
 cd $script:install
 Invoke-Expression -Command "$script:workshop_api_delete"
 Expand-Archive -LiteralPath "$script:workshop_patch" -DestinationPath $script:install -Force
